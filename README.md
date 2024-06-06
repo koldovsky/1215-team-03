@@ -30,3 +30,4 @@ Team:
 -Sorokotiaha Oleh
 -Sofiia Semenko
 -Anna Sosnytska
+-Artur Ivanov
