@@ -28,3 +28,4 @@ Team:
 -Yurchenko Oleksandra
 -Karina Zozulia
 -Sorokotiaha Oleh
+-Sofiia Semenko
