@@ -29,3 +29,4 @@ Team:
 -Karina Zozulia
 -Sorokotiaha Oleh
 -Sofiia Semenko
+-Anna Sosnytska
