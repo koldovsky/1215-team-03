@@ -26,3 +26,4 @@ Team:
 -Rudikov Yevhen
 -Ponomarenko Olena
 -Yurchenko Oleksandra
+-Karina Zozulia
