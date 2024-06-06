@@ -25,3 +25,4 @@ Team:
 -Sokolov Yevhen
 -Rudikov Yevhen
 -Ponomarenko Olena
+-Yurchenko Oleksandra
