@@ -27,3 +27,4 @@ Team:
 -Ponomarenko Olena
 -Yurchenko Oleksandra
 -Karina Zozulia
+-Sorokotiaha Oleh
