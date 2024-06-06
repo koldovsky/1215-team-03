@@ -29,3 +29,6 @@ Team:
 -Karina Zozulia
 -Sorokotiaha Oleh
 -Sofiia Semenko
+-Anna Sosnytska
+-Artur Ivanov
+-Blaha Viktor
