@@ -32,3 +32,4 @@ Team:
 -Anna Sosnytska
 -Artur Ivanov
 -Blaha Viktor
+-Maxim Cazanli
