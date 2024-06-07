@@ -33,3 +33,4 @@ Team:
 -Artur Ivanov
 -Blaha Viktor
 -Maxim Cazanli
+-Yurii Pylypchuk
