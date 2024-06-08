@@ -35,3 +35,4 @@ Team:
 -Maxim Cazanli
 -Yurii Pylypchuk
 -Tetiana Kopot
+-Anistrat Serhii
