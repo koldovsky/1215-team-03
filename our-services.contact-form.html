@@ -9,16 +9,13 @@
     <section>
         <h2>Want to join us?</h2>
         <p>Complete the form below and sail with YachtSail Trips to the most spectacular places of the world!</p>
-        <div>
-            <input type="text" placeholder="Name*">
-        </div>
-        <div>
-            <input type="text" placeholder="Phone number*">
-        </div>
-        <div>
-            <input type="text" placeholder="E-mail*">
-        </div>
-        <button type="button">Send a Request</button>
+        <form action="https://formspree.io/f/xdoqqnwa" method="post">
+            <input type="text" id="ContactName" name="Name" placeholder="Name*">
+            <input type="text" id="ContactPhoneNumber" name="Phone" placeholder="Phone number*">
+            <input type="text" id="ContactEmail" name="Email" placeholder="E-mail*">
+            <button type="button">Send a Request</button>
+        </form>    
     </section>
+    
 </body>
 </html>
