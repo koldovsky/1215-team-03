@@ -17,53 +17,62 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="global.header-nav.partial.html"
       ></nav>
     </header>
-    <h1>Destinations</h1>
-    <div>
-      <div>
-        <img
-          src="img/destinations/croatia.webp"
-          width="300"
-          alt="image of Croatia"
-        />
+    <main class="main-content">
+      <h1 class="main-content__title">Destinations</h1>
+      <div class="destination">
+        <div class="destination__image-wrapper">
+          <img
+            class="destination__image-wrapper"
+            src="img/destinations/croatia.webp"
+            width="300"
+            alt="image of Croatia"
+            class="destination__image"
+          />
+        </div>
+        <div class="destination__details">
+          <h2 class="destination__title">Affable Croatian Isles</h2>
+          <p class="destination__dates">JUN | JUL | AUG | SEP</p>
+          <p class="destination__price">From €650 p.p.</p>
+          <p class="destination__description">
+            Croatia is an amazing country, with almost untouched nature,
+            incredibly beautiful harbors and small islands. We are going on a
+            7-day voyage on these islands! Bathing in the open sea,
+            contemplation of the wonderful nature, green woods, sandy beaches
+            and red tile roofs of ancient houses are waiting for you. We start
+            from Pula and go through the islands of Krk, Hvar, Cres, Rab, Mljet
+            and 10 more islands!
+          </p>
+          <a
+            data-component="button"
+            href="one-tour.html"
+            class="destination__link"
+          >
+            <span>Join the tour</span>
+          </a>
+        </div>
       </div>
-      <div>
-        <h2>Affable Croatian Isles</h2>
-        <p>JUN | JUL | AUG | SEP</p>
-        <p>From €650 p.p.</p>
-        <p>
-          Croatia is an amazing country, with almost untouched nature,
-          incredibly beautiful harbors and small islands. We are going on a
-          7-day voyage on these islands! Bathing in the open sea, contemplation
-          of the wonderful nature, green woods, sandy beaches and red tile roofs
-          of ancient houses are waiting for you. We start from Pula and go
-          through the islands of Krk, Hvar, Cres, Rab, Mljet and 10 more
-          islands!
-        </p>
-        <a data-component="button" href="one-tour.html">
-          <span>Join the tour</span>
-        </a>
-      </div>
-    </div>
-    <div>
-      <div>
+    </main>
+    <div class="destination">
+      <div class="destination__image-wrapper">
         <img
+          class="destination__image-wrapper"
           src="img/destinations/amalfi.webp"
           width="300"
           alt="image of Amalfi"
         />
       </div>
-      <div>
-        <h2>Vacation Around Amalfi</h2>
-        <p>JUN | JUL | AUG | SEP</p>
-        <p>From €800 p.p.</p>
-        <p>
+      <div class="destination__details">
+        <h2 class="destination__title">Vacation Around Amalfi</h2>
+        <p class="destination__dates">JUN | JUL | AUG | SEP</p>
+        <p class="destination__price">From €800 p.p.</p>
+        <p class="destination__description">
           The majestic and legendary Amalfi Coast is surrounded by historical
           charm and scenic romanticism, this is the best place for yachting with
           its emerald waters. Swimming and snorkeling, the archaeological ruins,
@@ -71,24 +80,29 @@
           gentle sea breeze makes the rays of the sun soft, and the climate is
           ideal for your summer holidays.
         </p>
-        <a data-component="button" href="one-tour.html">
+        <a
+          data-component="button"
+          href="one-tour.html"
+          class="destination__link"
+        >
           <span>Join the tour</span>
         </a>
       </div>
     </div>
-    <div>
-      <div>
+    <div class="destination">
+      <div class="destination__image-wrapper">
         <img
+          class="destination__image-wrapper"
           src="img/destinations/norway.webp"
           width="300"
           alt="image of Norway"
         />
       </div>
-      <div>
-        <h2>Through the Fjords of Norway</h2>
-        <p>JUN | JUL | AUG | SEP</p>
-        <p>From €900 p.p.</p>
-        <p>
+      <div class="destination__details">
+        <h2 class="destination__title">Through the Fjords of Norway</h2>
+        <p class="destination__dates">JUN | JUL | AUG | SEP</p>
+        <p class="destination__price">From €900 p.p.</p>
+        <p class="destination__description">
           For 7 days of sailing, you will see what the country of the Vikings is
           so wonderful about. We will go through the fjords, stopping in local
           villages, where we’ll eat crabs, stroll through picturesque Bergen,
@@ -96,24 +110,29 @@
           top of the mountain, spend a night in a colorful fishing village. And
           of course we will go fishing for trout and salmon.
         </p>
-        <a data-component="button" href="one-tour.html">
+        <a
+          data-component="button"
+          href="one-tour.html"
+          class="destination__link"
+        >
           <span>Join the tour</span>
         </a>
       </div>
     </div>
-    <div>
-      <div>
+    <div class="destination">
+      <div class="destination__image-wrapper">
         <img
+          class="destination__image-wrapper"
           src="img/destinations/turkey.webp"
           width="300"
           alt="image of Turkey"
         />
       </div>
-      <div>
-        <h2>Non-touristic Turkey</h2>
-        <p>JUN | JUL | AUG | SEP</p>
-        <p>From €550 p.p.</p>
-        <p>
+      <div class="destination__details">
+        <h2 class="destination__title">Non-touristic Turkey</h2>
+        <p class="destination__dates">JUN | JUL | AUG | SEP</p>
+        <p class="destination__price">From €550 p.p.</p>
+        <p class="destination__description">
           Seven days of yachting will help you truly discover another Turkey.
           Every day will be different from the previous one - incredibly
           picturesque coasts, cozy bays, ancient cities, original non-touristic
@@ -121,24 +140,29 @@
           surprised by the diverse marine world - there are sea urchins with
           unrealistically long needles, colorful fish, sea turtles and more.
         </p>
-        <a data-component="button" href="one-tour.html">
+        <a
+          data-component="button"
+          href="one-tour.html"
+          class="destination__link"
+        >
           <span>Join the tour</span>
         </a>
       </div>
     </div>
-    <div>
-      <div>
+    <div class="destination">
+      <div class="destination__image-wrapper">
         <img
+          class="destination__image-wrapper"
           src="img/destinations/greece.webp"
           width="300"
           alt="image of Greece"
         />
       </div>
-      <div>
-        <h2>Ancient Greece</h2>
-        <p>JUN | JUL | AUG | SEP</p>
-        <p>From €750 p.p.</p>
-        <p>
+      <div class="destination__details">
+        <h2 class="destination__title">Ancient Greece</h2>
+        <p class="destination__dates">JUN | JUL | AUG | SEP</p>
+        <p class="destination__price">From €750 p.p.</p>
+        <p class="destination__description">
           Greece is not only about Athens or Halkidiki. This country has a great
           history and islands of amazing beauty. We offer a 10-day trip to the
           most spectacular places in Greece, with docking at ports and exciting
@@ -146,24 +170,29 @@
           Paros, Hydra, Spetses and more. Amazing adventures, diving and even
           fishing at will are waiting for you!
         </p>
-        <a data-component="button" href="one-tour.html">
+        <a
+          data-component="button"
+          href="one-tour.html"
+          class="destination__link"
+        >
           <span>Join the tour</span>
         </a>
       </div>
     </div>
-    <div>
-      <div>
+    <div class="destination">
+      <div class="destination__image-wrapper">
         <img
+          class="destination__image-wrapper"
           src="img/destinations/spain.webp"
           width="300"
           alt="image of Spain"
         />
       </div>
-      <div>
-        <h2>Spain + Nightlife at Ibiza</h2>
-        <p>JUN | JUL | AUG | SEP</p>
-        <p>From €900 p.p.</p>
-        <p>
+      <div class="destination__details">
+        <h2 class="destination__title">Spain + Nightlife at Ibiza</h2>
+        <p class="destination__dates">JUN | JUL | AUG | SEP</p>
+        <p class="destination__price">From €900 p.p.</p>
+        <p class="destination__description">
           We leave from Valencia, then travel 7 days along Costa Blanca
           (visiting the cities of Javea, Gandia, Denia, Calpe, Althea) and
           return to Valencia. In addition, we will stay for 2 nights in Ibiza,
@@ -171,7 +200,11 @@
           Privilege, Space, Es Paradis or any other at your choice. You can
           admire amazing landscapes, turquoise sea and parties every day!
         </p>
-        <a data-component="button" href="one-tour.html">
+        <a
+          data-component="button"
+          href="one-tour.html"
+          class="destination__link"
+        >
           <span>Join the tour</span>
         </a>
       </div>
