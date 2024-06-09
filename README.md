@@ -34,3 +34,5 @@ Team:
 -Blaha Viktor
 -Maxim Cazanli
 -Yurii Pylypchuk
+-Tetiana Kopot
+-Anistrat Serhii
