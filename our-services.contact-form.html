@@ -13,20 +13,28 @@
         spectacular places of the world!
       </p>
       <form action="https://formspree.io/f/xdoqqnwa" method="post">
-        <input type="text" id="ContactName" name="Name" placeholder="Name*" />
         <input
           type="text"
+          id="ContactName"
+          name="Name"
+          placeholder="Name*"
+          required
+        />
+        <input
+          type="tel"
           id="ContactPhoneNumber"
           name="Phone"
           placeholder="Phone number*"
+          required
         />
         <input
-          type="text"
+          type="email"
           id="ContactEmail"
           name="Email"
           placeholder="E-mail*"
+          required
         />
-        <button type="button">Send a Request</button>
+        <button type="submit">Send a Request</button>
       </form>
     </section>
   </body>
