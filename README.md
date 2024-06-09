@@ -36,3 +36,4 @@ Team:
 -Yurii Pylypchuk
 -Tetiana Kopot
 -Anistrat Serhii
+-Yuskiv Yana
