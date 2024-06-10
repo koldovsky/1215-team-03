@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <section class="our-fleet-form">
+      <img src="./img/our-fleet/form-section-background.jpg" alt="Map" width="800">
+      <div class="our-fleet-form__container">
+        <h2 class="our-fleet-form__title">Ready to Sail?</h2>
+        <p class="our-fleet-form__text">
+          Fill out the form and we will contact you soon to clear all the
+          details and book a tour for you.
+        </p>
+        <form action="https://formspree.io/f/xayrrnea" method="post">
+          <input type="text" placeholder="Name*" required name="client-name" />
+          <input
+            type="tel"
+            placeholder="Phone number*"
+            required
+            name="client-phone"
+          />
+          <input
+            type="email"
+            placeholder="E-mail*"
+            required
+            name="client-email"
+          />
+          <select name="choose-trip">
+            <option disabled selected>Choose yuor trip</option>
+            <option value="Affable Croatian Isles">
+              Affable Croatian Isles
+            </option>
+            <option value="Vacation Around Amalfi">
+              Vacation Around Amalfi
+            </option>
+            <option value="Through the Fjords of Norway">
+              Through the Fjords of Norway
+            </option>
+            <option value="Non-touristic Turkey">Non-touristic Turkey</option>
+            <option value="Ancient Greece">Ancient Greece</option>
+            <option value="Spain + Nightlife at Ibiza">
+              Spain + Nightlife at Ibiza
+            </option>
+          </select>
+          <input type="submit" value="Send a Request" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
+
