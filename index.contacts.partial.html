@@ -18,27 +18,51 @@
         </p>
       </div>
       <div class="contacts__details">
-        <ul class="contacts__list contacts__list--address">
+        <div class="contacts__block contacts__block--address">
           <h3 class="contacts__subtitle">ADDRESS</h3>
-          <li class="contacts__item">23 Broad St, Brighton BN2 1TJ, UK</li>
-        </ul>
-        <ul class="contacts__list contacts__list--hours">
+          <ul class="contacts__list">
+            <li class="contacts__item">23 Broad St, Brighton BN2 1TJ, UK</li>
+          </ul>
+        </div>
+        <div class="contacts__block contacts__block--hours">
           <h3 class="contacts__subtitle">HOURS</h3>
-          <li class="contacts__item">Monday - Saturday: 11 AM - 9 PM</li>
-          <li class="contacts__item">Sunday: 11 AM - 7 PM</li>
-        </ul>
-        <ul class="contacts__list contacts__list--contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">Monday - Saturday: 11 AM - 9 PM</li>
+            <li class="contacts__item">Sunday: 11 AM - 7 PM</li>
+          </ul>
+        </div>
+        <div class="contacts__block contacts__block--contacts">
           <h3 class="contacts__subtitle">CONTACTS</h3>
-          <li class="contacts__item">+1 (234) 567 89 00</li>
-          <li class="contacts__item">yacht@email.com</li>
-        </ul>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a href="tel:+12345678900">+1 (234) 567 89 00</a>
+            </li>
+            <li class="contacts__item">
+              <a href="mailto:yacht@email.com">yacht@email.com</a>
+            </li>
+          </ul>
+        </div>
         <div class="contacts__social">
-          <i class="contacts__icon fa-brands fa-twitter"></i>
-          <i class="contacts__icon fa-brands fa-youtube"></i>
-          <i class="contacts__icon fa-brands fa-square-instagram"></i>
+          <a href="https://x.com/SoftServeInc" class="contacts__social-link"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@programmingmentorua"
+            class="contacts__social-link"
+            ><i class="contacts__icon fa-brands fa-youtube"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/softserve_people/"
+            class="contacts__social-link"
+            ><i class="contacts__icon fa-brands fa-square-instagram"></i
+          ></a>
         </div>
       </div>
-      <form class="contacts__form" action="">
+      <form
+        class="contacts__form"
+        action="https://formspree.io/f/mqkrrapn"
+        method="post"
+      >
         <input
           class="contacts__input contacts__input--name"
           type="text"
