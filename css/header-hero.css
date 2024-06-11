@@ -1,0 +1,23 @@
+.header__hero-image {
+    background: url(../img/header/hero-background.jpeg), linear-gradient(rgba(0,0,0,0.5));
+    background-size: 100% auto; 
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 400px;
+}
+
+.header__hero-title {
+    text-align: center; 
+    color: black; 
+    padding: 20px; 
+}
+
+.header__hero-title h1 {
+    margin-bottom: 10px; 
+}
+
+.header__button__let-us-sail {
+    margin-top: 20px; 
+}

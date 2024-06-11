@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About us</title>
+    <link rel="stylesheet" href="css/index.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></nav>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
     </header>
     <main>
-        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us.our-story.partial.html"></section>
-        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us.our-promises.partial.html"></section>
-        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us.our-partners.partial.html"></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about-us.our-story.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about-us.our-promises.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about-us.our-partners.partial.html"
+      ></section>
     </main>
-</body>
-<footer>
-    <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="footer.partial.html"></nav>
-</footer>
+  </body>
+  <footer>
+    <nav
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="footer.partial.html"
+    ></nav>
+  </footer>
 </html>
