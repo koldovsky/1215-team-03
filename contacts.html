@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contacts</title>
     <link
       rel="shortcut icon"
-      href="https://placekitten.com/96/139"
-      type="image/x-icon"
+      href="img/global/shortcut-icon.png"
+      type="image/png"
     />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -23,21 +23,19 @@
   </head>
   <body>
     <header>
-      <nav
+      <!-- <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="global.header-nav.partial.html"
-      ></nav>
+      ></nav> -->
     </header>
     <section class="contacts">
-      <div class="contacts__map">
+      <div class="contacts__map container">
         <h1 class="contacts__title">Contacts</h1>
         <div class="contacts__map-container">
           <iframe
             class="contacts__iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22145.400989243077!2d35.054478172980694!3d48.461085052711994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2cecce23add%3A0x47fd98728330908e!2z0J_QsNGA0Log0LrRg9C70YzRgtGD0YDRiyDQuCDQvtGC0LTRi9GF0LAg0LjQvCDQoi4g0JMuINCo0LXQstGH0LXQvdC60L4!5e0!3m2!1sru!2spl!4v1718017774665!5m2!1sru!2spl"
-            width="600"
-            height="450"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
@@ -45,7 +43,7 @@
           ></iframe>
         </div>
       </div>
-      <div class="contacts__info">
+      <div class="contacts__info container">
         <article class="contacts__article">
           <p class="contacts__description">
             If you are planning your stunning summer vacation, we will be happy
