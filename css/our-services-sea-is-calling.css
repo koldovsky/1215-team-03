@@ -1,0 +1,60 @@
+.sea-is-calling {
+  padding: 90px 0 100px;
+  max-width: 1200px;
+  margin: auto;
+}
+.sea-is-calling__content {
+  padding: 0 24px;
+}
+.sea-is-calling__title {
+  font-family: var(--contacts-font-playfair);
+  font-size: 34px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  letter-spacing: 1.428px;
+  line-height: 34px;
+  color: var(--text-color-dark);
+}
+
+.sea-is-calling__blocks {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 45px;
+}
+
+.sea-is-calling__subtitle {
+  font-family: var(--contacts-font-playfair);
+  font-size: 22px;
+  letter-spacing: 0.99px;
+  text-align: left;
+  color: var(--text-color-dark);
+}
+.sea-is-calling__description {
+  font-family: var(--contacts-font-raleway);
+  font-weight: 500;
+  font-size: 15px;
+  font-style: normal;
+  font-stretch: 100%;
+  font-optical-sizing: auto;
+  letter-spacing: 0.465px;
+  line-height: 26.25px;
+  color: var(--text-color-medium);
+  margin-block-start: 30px;
+  min-width: 375px;
+  flex: 1;
+}
+.sea-is-calling__block-with-image {
+  min-width: 220px;
+  padding: 34px 28px;
+  background-color: var(--our-services-background);
+  flex: 1;
+}
+.sea-is-calling__image {
+  width: 100%;
+}
+.sea-is-calling__text {
+  margin-top: 20px;
+}
