@@ -1,85 +1,85 @@
 header {
-    width: 100%;
-  }
+  width: 100%;
+}
 
-  .header__nav-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 10px 20px;
-  }
-  
-  .header__phone {
-    font-size: 16px;
-    color: black;
-  }
-  
-  .header__phone a {
-    color: #d0bd8c;
-  }
+.header__nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+}
 
-  .header__social-icons {
-    font-size: 20px;
-  }
-  
-  .header__social-icons i {
-    margin-left: 10px;
-  }
+.header__phone {
+  font-size: 16px;
+  color: black;
+}
+
+.header__phone a {
+  color: #d0bd8c;
+}
+
+.header__social-icons {
+  font-size: 20px;
+}
+
+.header__social-icons i {
+  margin-left: 10px;
+}
 
 .header__hero-nav {
-    display: flex;
-    align-items: center;
-    background-color: #515c6d;
-    padding: 20px;
-  }
-  
-  .header__web-site-logo {
-    margin-right: auto; 
-  }
-  
-  .header__nav-menu-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px; 
-  }
-  
-  .header__nav-menu {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .header__nav-menu li {
-    margin-left: 20px;
-  }
-  
-  .header__nav-menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-  }
+  display: flex;
+  align-items: center;
+  background-color: #515c6d;
+  padding: 20px;
+}
 
-  .header__nav-menu a:hover {
-    background-color: transparent;
-    color: #d0bd8c;
-  }
-  
-  .header__button__send-a-request {
+.header__web-site-logo {
+  margin-right: auto;
+}
+
+.header__nav-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.header__nav-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__nav-menu li {
+  margin-left: 20px;
+}
+
+.header__nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.header__nav-menu a:hover {
+  background-color: transparent;
+  color: #d0bd8c;
+}
+
+.header__button__send-a-request {
   align-self: flex-end;
   padding-top: 10px;
 }
 
 .header__button__send-a-request a {
   display: inline-block;
-  padding: 10px 20px; 
+  padding: 10px 20px;
   background-color: #d0bd8c;
   color: #f1f0e8;
   text-decoration: none;
   font-size: 16px;
-  border-radius: 20px; 
-  text-align: center; 
+  border-radius: 20px;
+  text-align: center;
 }
 
 .header__button__send-a-request a:hover {
@@ -87,3 +87,24 @@ header {
   color: #d0bd8c;
 }
 
+@media (max-width: 850px) {
+  .header__nav-menu-wrapper {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+}
+
+@media (min-width: 851px) {
+  .header__nav-menu-button {
+    display: none;
+  }
+
+  .header__nav-menu-wrapper {
+    display: flex;
+  }
+}
