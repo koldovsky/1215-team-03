@@ -1,1 +1,4 @@
-@import "header.css"
+@import "global.css";
+@import "header.css";
+@import "about-us.our-story.css";
+@import "footer.css";
