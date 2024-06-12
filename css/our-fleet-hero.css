@@ -25,11 +25,22 @@
 }
 
 .hero__title {
-  font-size: 48px;
+  font-size: 34px;
+  letter-spacing: 1px;
   margin-bottom: 25px;
+  
+  @media(min-width: 768px) {
+    font-size: 48px;
+  }
 }
 
 .hero__text {
-  font-size: 15px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+
+  @media(min-width: 768px) {
+    font-size: 15px;
+
+  }
 }
