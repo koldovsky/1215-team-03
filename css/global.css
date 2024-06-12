@@ -5,6 +5,9 @@
   --contacts-font-playfair: "Playfair Display", serif;
   --contacts-font-raleway: "Raleway", sans-serif;
   --text-color-light: #ffffff;
+  --text-color-medium: #515C6D;
+  --text-color-dark: #25364A;
+  --icon-background:#d0bd8c;
 }
 
 h1 {
@@ -24,4 +27,8 @@ h1 {
 img {
   display: block;
   width: auto;
+}
+
+ul {
+  list-style: none;
 }
