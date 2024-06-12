@@ -9,24 +9,53 @@
       href="https://placekitten.com/96/139"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="css/index.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/621e7291f0.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></nav>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
     </header>
     <main>
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="our-fleet.hero-section.partial.html"></section>
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="our-fleet.technical-side.partial.html"></section>
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="our-fleet.fleet-card.partial.html"></section>
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="our-fleet.form.partial.html"></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="our-fleet.hero-section.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="our-fleet.technical-side.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="our-fleet.fleet-card.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="our-fleet.form.partial.html"
+      ></section>
     </main>
     <footer>
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="footer.partial.html"></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="footer.partial.html"
+      ></section>
     </footer>
   </body>
 </html>

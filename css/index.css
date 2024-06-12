@@ -1,0 +1,12 @@
+@import "header.css";
+@import "header-hero.css";
+@import "about-us.css";
+/* @import "contacts.css"; I think this is not needed here*/
+@import "destinations.css";
+@import "faq.css";
+@import "footer.css";
+@import "gallery.css";
+@import "our-fleet.css";
+@import "accomodation-options.css";
+@import "our-services";
+@import "index.contacts.css";
