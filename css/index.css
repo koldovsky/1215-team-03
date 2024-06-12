@@ -1,12 +1,14 @@
-@import "header.css";
-@import "header-hero.css";
 @import "about-us.css";
-/* @import "contacts.css"; I think this is not needed here*/
+@import "accomodation-options.css";
 @import "destinations.css";
 @import "faq.css";
 @import "footer.css";
 @import "gallery.css";
-@import "our-fleet.css";
-@import "accomodation-options.css";
-@import "our-services";
+@import "global.css";
+@import "header-hero.css";
+@import "header.css";
+/* @import "contacts.css"; I think this is not needed here*/
 @import "index.contacts.css";
+@import "our-fleet-hero.css";
+@import "our-fleet.css";
+@import "our-services";
