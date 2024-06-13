@@ -118,7 +118,6 @@
       flex-wrap: wrap;
 
       .fleet-card__fleet-container-imgbox__wrapper {
-        max-width: 717px;
         aspect-ratio: 1 / 0.85;
         overflow: hidden;
 
@@ -127,6 +126,10 @@
           height: 100%;
           object-fit: cover;
           transition: 0.5s;
+
+          &.change-position {
+            object-position: 50% 0;
+          }
 
           &:hover {
             transition: 0.5s;
@@ -148,11 +151,11 @@
 
       .fleet-card__fleet-container {
         flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
 
         .fleet-card__fleet-container-box {
           min-width: 50%;
+          margin: 0 0 50px;
 
           .fleet-card__fleet-container-box__item {
             flex-direction: row;
