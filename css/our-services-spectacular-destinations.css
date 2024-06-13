@@ -48,21 +48,21 @@
     align-items: center;
   }
 
-  .destination {
+  .destination-place {
     background-color: var(--text-color-light);
     padding: 31px 27px;
     height: 100%;
     width: 100%;
   }
 
-  .destination__image {
+  .destination-place__image {
     width: 100%;
     box-sizing: border-box;
     aspect-ratio: 12/9;
     object-fit: cover;
   }
 
-  .destination__image-description {
+  .destination-place__image-description {
     font-family: var(--contacts-font-raleway);
     color: var(--text-color-dark);
     font-size: 1.125rem; /*18px*/
