@@ -1,10 +1,25 @@
-travels-gallery {
+.travels-gallery {
     text-align: center;
-    color: rgb(37, 54, 74);
-    font-size: 41px;
-    }
-    travels-description {
+    color: var(--text-color-dark);
+    font-size: 48px;
+    margin: 20px 10px;
+    padding: 5px;
+    font-family: var(--contacts-font-playfair);
+    color: var(--text-color-primary);
+  }
+  .travels-description {
     text-align: center;
-    color: rgb(37, 54, 74);
+    color: rgb(81, 92, 109);
     font-size: 16px;
-    }
+    margin: 10px 10px;
+    font-family: "Raleway", sans-serif;
+  }
+  .travels-container {
+    background-color: var(--bg-color-primary);
+  }
+  .travels-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
