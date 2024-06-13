@@ -6,31 +6,34 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: var(--ui-light-shade-color);
   padding: 10px 20px;
 }
 
 .header__phone {
   font-size: 16px;
-  color: black;
 }
 
 .header__phone a {
-  color: #d0bd8c;
+  color: var(--ui-brand-color);
 }
 
 .header__social-icons {
-  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
 }
 
-.header__social-icons i {
-  margin-left: 10px;
+.header__social-icons a {
+  margin-left: 15px;
+  width: 25px;
 }
 
 .header__hero-nav {
   display: flex;
   align-items: center;
-  background-color: #515c6d;
+  background-color: var(--ui-dark-accent-color);
   padding: 20px;
 }
 
@@ -57,13 +60,13 @@ header {
 
 .header__nav-menu a {
   text-decoration: none;
-  color: white;
+  color: var(--ui-light-shade-color);
   font-size: 16px;
 }
 
 .header__nav-menu a:hover {
   background-color: transparent;
-  color: #d0bd8c;
+  color: var(--ui-brand-color);
 }
 
 .header__button__send-a-request {
@@ -74,8 +77,8 @@ header {
 .header__button__send-a-request a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #d0bd8c;
-  color: #f1f0e8;
+  background-color: var(--ui-brand-color);
+  color: var(--ui-light-accent-color);
   text-decoration: none;
   font-size: 16px;
   border-radius: 20px;
@@ -83,8 +86,8 @@ header {
 }
 
 .header__button__send-a-request a:hover {
-  background-color: #f1f0e8;
-  color: #d0bd8c;
+  background-color: var(--ui-light-accent-color);
+  color: var(--ui-brand-color);
 }
 
 @media (max-width: 850px) {
@@ -95,7 +98,7 @@ header {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--ui-light-shade-color);
   }
 }
 

@@ -9,6 +9,10 @@
   --text-color-dark: #25364A;
   --icon-background:#d0bd8c;
   --our-services-background:#f1f0e8;
+  --ui-dark-accent-color: #515c6d;
+  --ui-brand-color: #d0bd8c;
+	--ui-light-shade-color: #fff;
+  --ui-light-accent-color: #f1f0e8;
 }
 
 h1 {
