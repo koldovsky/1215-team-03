@@ -5,7 +5,8 @@
 }
 
 .sea-is-calling__content {
-  padding: 0 24px;
+  padding: 0 40px;
+  margin: 0 -15px;
 }
 
 .sea-is-calling__title {
@@ -19,7 +20,7 @@
 
 .sea-is-calling__blocks {
   gap: 15px;
-  margin-top: 45px;
+  margin-top: 50px;
 }
 
 .sea-is-calling__subtitle {
@@ -36,12 +37,14 @@
   font-size: 0.94rem; /* 15px */
   letter-spacing: 0.03rem; /* 0.465px */
   min-width: 375px;
+  line-height: 1.8rem;
+  padding: 0 15px ;
 }
 
 .sea-is-calling__block-with-image {
-  padding: 34px 28px;
+  padding: 34px 33px;
   background-color: var(--ui-light-accent-color);
-  min-width: 220px;
+  min-width: 230px;
   margin-top: 50px;
 }
 
