@@ -188,7 +188,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .fleet-cards {
     .fleet-card {
       .fleet-card__title {
