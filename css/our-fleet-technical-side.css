@@ -1,0 +1,65 @@
+.technical-side {
+  padding: 90px 24px 75px;
+}
+
+.technical-side__title {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1.5px;
+  font-size: 34px;
+  text-align: center;
+  color: var(--text-color-dark);
+  margin: 0 auto 35px;
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+  }
+}
+
+.technical-side__servises {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.technical-side__servise {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    width: calc((100% - 25px) / 2);
+  }
+}
+.technical-side__servise__svg-background {
+  width: 50px;
+  height: 50px;
+  background-color: var(--icon-background);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  @media (min-width: 768px) {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+.technical-side__servise__svg-background > svg {
+  height: 26px;
+  width: 26px;
+
+  @media (min-width: 768px) {
+    height: 40px;
+    width: 40px;
+  }
+}
+.technical-side__servise-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  color: var(--text-color-medium);
+}

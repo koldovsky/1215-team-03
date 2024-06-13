@@ -1,25 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About us</title>
+    <link rel="shortcut icon" type="img/x-icon" href="./img/global/favicon.ico" />
+    <link rel="stylesheet" href="css/index.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/621e7291f0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="our-services.header-nav.partial.html"></nav>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
     </header>
     <main>
-        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="our-services.sea-is-calling.partial.html"></section> 
-        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="our-services.spectacular-destinations.partial.html"></section> 
-        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="our-services.crew-services.partial.html"></section> 
-        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="our-services.payment-options.partial.html"></section> 
-        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="our-services.contact-form.partial"></section> 
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="our-services.sea-is-calling.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="our-services.spectacular-destinations.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="our-services.accomodation-options.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="our-services.crew-services.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="our-services.payment-options.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="our-services.contact-form.partial"
+      ></section>
     </main>
-</body>
+    <footer>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="footer.partial.html"
+      ></section>
+    </footer>
+  </body>
 </html>

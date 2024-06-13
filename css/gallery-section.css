@@ -1,0 +1,13 @@
+gallery-title {
+    text-align: center;
+    color: rgb(37, 54, 74);
+    font-size: 48px;
+}
+gallery-description {
+    text-align: center;
+    color: rgb(37, 54, 74);
+    font: size 15px;;
+}
+gallery-container {
+    background-color: #ffffffff;
+}
