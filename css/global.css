@@ -5,17 +5,35 @@
   --contacts-font-playfair: "Playfair Display", serif;
   --contacts-font-raleway: "Raleway", sans-serif;
   --text-color-light: #ffffff;
-  --text-color-medium: #515C6D;
-  --text-color-dark: #25364A;
-  --icon-background:#d0bd8c;
-  --our-services-background:#f1f0e8;
+  --text-color-medium: #515c6d;
+  --text-color-dark: #25364a;
+  --icon-background: #d0bd8c;
+  --our-services-background: #f1f0e8;
   --ui-dark-accent-color: #515c6d;
   --ui-brand-color: #d0bd8c;
-	--ui-light-shade-color: #fff;
+  --ui-light-shade-color: #fff;
   --ui-light-accent-color: #f1f0e8;
   --text-color-medium: #515c6d;
   --text-color-dark: #25364a;
   --icon-background: #d0bd8c;
+
+  /* проінспектував сайт, додав всі кольори що знайшов і назвав змінні відповідно за кольором та призначенням */
+
+  --bg-color-primary: #ffffff;
+  --bg-color-secondary: #d0bd8c;
+  --bg-color-dark: #25364a;
+  --bg-color-medium-dark: #223648;
+  --bg-color-medium-light: #515c6d;
+  --bg-color-light: #f1f0e8;
+  --text-color-primary: #25364a;
+  --text-color-secondary: #515c6d;
+  --text-color-light: #ffffff;
+  --hover-color-primary: #ffffff;
+  --hover-color-secondary: #d0bd8c;
+  --hover-color-dark: #25364a;
+  --border-color: #d0bd8c;
+  --font-family-primary: "Playfair Display", serif;
+  --font-family-secondary: "Raleway", sans-serif;
 }
 
 html {
