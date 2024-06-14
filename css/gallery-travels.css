@@ -1,10 +1,69 @@
-travels-gallery {
+.travels-gallery {
+  text-align: center;
+  color: var(--text-color-dark);
+  font-size: 48px;
+  margin: 20px 10px;
+  padding: 5px;
+  font-family: var(--contacts-font-playfair);
+  color: var(--text-color-primary);
+}
+
+.travels-description {
+  text-align: center;
+  color: rgb(81, 92, 109);
+  font-size: 16px;
+  margin: 10px 10px;
+  font-family: var(--font-family-secondary);
+  color: var(--text-color-secondary);
+}
+
+.travels-container {
+  background-color: var(--bg-color-primary);
+}
+
+.travels-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.travels-img {
+  flex: 1 1 calc(33.333% - 1rem);
+  max-width: calc(33.333% - 1rem);
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px;
+}
+
+@media (max-width: 768px) {
+  .travels-img {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .travels-gallery {
     text-align: center;
-    color: rgb(37, 54, 74);
+    color: var(--text-color-primary);
     font-size: 41px;
-    }
-    travels-description {
+  }
+
+}
+
+@media (max-width: 480px) {
+  .travels-img {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .travels-gallery {
     text-align: center;
-    color: rgb(37, 54, 74);
-    font-size: 16px;
-    }
+    color: var(--text-color-primary);
+    font-size: 34px;
+  }
+}
+
+.travels-container {
+  background-image: url(../img/gallery-card/backgroundwhite.jpg);
+}

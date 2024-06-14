@@ -2,6 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --contacts-font-playfair: "Playfair Display", serif;
   --contacts-font-raleway: "Raleway", sans-serif;
@@ -18,7 +24,6 @@
   --icon-background: #d0bd8c;
 
   /* проінспектував сайт, додав всі кольори що знайшов і назвав змінні відповідно за кольором та призначенням */
-
   --bg-color-primary: #ffffff;
   --bg-color-secondary: #d0bd8c;
   --bg-color-dark: #25364a;
@@ -36,6 +41,7 @@
   --font-family-primary: "Playfair Display", serif;
   --font-family-secondary: "Raleway", sans-serif;
   --font-family-third: "Rubik", sans-serif;
+  /* проінспектував сайт, додав всі кольори що знайшов і назвав змінні відповідно за кольором та призначенням */
 }
 
 html {
@@ -44,11 +50,6 @@ html {
 
 h1 {
   font-family: "Playfair";
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .container {
