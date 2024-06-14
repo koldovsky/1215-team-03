@@ -1,0 +1,104 @@
+.our-fleet-form {
+  width: 100%;
+  height: 100vh;
+  background: 
+  linear-gradient(
+    rgba(37, 54, 79, 0.8),
+   rgba(37, 54, 79, 0.8)),
+    url("../img/our-fleet/form-section-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--text-color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-fleet-form__container {
+  padding: 30px 40px;
+  text-align: center;
+  width: 90%;
+  max-width: 570px;
+  background-color: var(--bg-color-primary);
+  
+  @media(min-width: 640px) {
+    padding: 60px 80px;
+  }
+}
+
+.our-fleet-form__title {
+  font-family: var(--font-family-primary);
+  font-size: 34px;
+  margin-bottom: 20px;
+  
+  @media(min-width: 640px) {
+    font-size: 48px;
+  }
+}
+
+.our-fleet-form__text {
+  font-family: var(--font-family-secondary);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  color: var( --text-color-secondary);
+  margin-bottom: 16px;
+  
+  @media(min-width: 640px) {
+    margin-bottom: 24px;   
+  }
+}
+
+.our-fleet-form__input,
+.our-fleet-form__select {
+  width: 100%;
+  padding: 12px 24px;
+  border-color: transparent;
+  border-radius: 25px;
+  background-color: rgba(37, 54, 74, 0.12);
+  color: var(--text-color-primary);
+  margin-top: 16px;
+  
+  @media(min-width: 640px) {
+    margin-top: 24px;
+  }
+}
+
+.our-fleet-form__input:last-child {
+  margin-top: 36px;
+  
+  @media(min-width: 640px) {
+    margin-top: 48px;
+  }
+}
+
+.our-fleet-form__input:focus,
+.our-fleet-form__select:focus {
+  outline: 1px solid var(--bg-color-medium-light);
+}
+
+.our-fleet-form__input::placeholder,
+.our-fleet-form__select,
+.our-fleet-form__option {
+  color: rgba(37, 54, 74, 0.4);  
+  font-size: 12px;
+}
+
+.our-fleet-form__input:focus::placeholder {
+  color: var(--text-color-secondary);
+}
+
+.our-fleet-form__submit {
+  background-color: var(--bg-color-secondary);
+  color: var(--bg-color-light);
+  border: none;
+  transition: linear .3s;
+}
+
+.our-fleet-form__submit:hover {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-medium-light);
+}
