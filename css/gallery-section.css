@@ -1,0 +1,27 @@
+.gallery-title {
+    text-align: center;
+    color: var(--text-color-dark);
+    font-size: 48px;
+    margin: 20px 10px;
+    padding: 5px;
+    font-family: var(--contacts-font-playfair);
+    color: var(--text-color-primary);
+  }
+  .gallery-description {
+    text-align: center;
+    color: var(--text-color-dark);
+    font-size: 15px;
+    margin: 10px 10px;
+    font-family: var(--font-family-secondary);
+    color: var(--text-color-secondary);
+  }
+  .gallery-container {
+    background-color: var(--bg-color-primary);
+  }
+  .gallery-images {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  

@@ -1,3 +1,6 @@
+@import "global.css";
 @import "header.css";
 @import "our-fleet-hero.css";
 @import "our-fleet-technical-side.css";
+@import "our-fleet.fleet-card.css";
+@import "footer.css";

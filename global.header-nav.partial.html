@@ -5,11 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navigation Menu</title>
-    <link
-      rel="shortcut icon"
-      href="https://placekitten.com/96/139"
-      type="image/x-icon"
-    />
     <link rel="stylesheet" href="css/index.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
@@ -23,43 +18,72 @@
   </head>
   <body>
     <header>
-      <nav class="header__nav container">
-        <section class="header__nav-top">
-          <div class="header__phone">
-            <a href="tel:+1-234-567-8900">+1-234-567-8900</a>
-          </div>
-          <div class="header__social-icons">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-square-instagram"></i>
-          </div>
-        </section>
-        <section class="header__hero-nav">
-          <div class="header__web-site-logo">
-            <a href="contacts.html">
-              <img
-                src="./img/header/site-logo.svg"
-                alt="Web Site Logo"
-                width="125px"
-              />
-            </a>
-          </div>
-          <div class="header__nav-menu-wrapper">
-            <a href="#" class="header__nav-menu-button"></a>
-            <ul class="header__nav-menu">
-              <li><a href="destinations.html">Destinations</a></li>
-              <li><a href="our-services.html">Our services</a></li>
-              <li><a href="our-fleet.html">Our fleet</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="about-us.html">About us</a></li>
-              <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-            <div class="header__button__send-a-request">
-              <a href="contacts.html" type="button">Send a Request</a>
+      <nav class="header__nav">
+        <div class="cotainer">
+          <section class="header__nav-top">
+            <div class="header__phone">
+              <a href="tel:+1-234-567-8900">+1-234-567-8900</a>
             </div>
-          </div>
-        </section>
+            <div class="header__social-icons">
+              <a href="https://x.com/">
+                <img src="./img/header/twitter.svg" alt="Twitter" />
+              </a>
+
+              <a href="https://www.youtube.com/">
+                <img src="./img/header/youtube.svg" alt="You Tube" />
+              </a>
+
+              <a href="https://www.instagram.com/">
+                <img src="./img/header/instagram.svg" alt="Instagram" />
+              </a>
+            </div>
+          </section>
+          <section class="header__hero-nav">
+            <div class="header__web-site-logo">
+              <a href="contacts.html">
+                <img
+                  src="./img/header/site-logo.svg"
+                  alt="Web Site Logo"
+                  width="125px"
+                />
+              </a>
+            </div>
+            <div class="header__nav-menu-wrapper">
+              <input id="menu__toggle" type="checkbox" />
+              <label class="menu__btn" for="menu__toggle">
+                <span></span>
+              </label>
+              <ul class="header__nav-menu">
+                <li>
+                  <a class="menu__item" href="destinations.html"
+                    >Destinations</a
+                  >
+                </li>
+                <li>
+                  <a class="menu__item" href="our-services.html"
+                    >Our services</a
+                  >
+                </li>
+                <li>
+                  <a class="menu__item" href="our-fleet.html">Our fleet</a>
+                </li>
+                <li><a class="menu__item" href="gallery.html">Gallery</a></li>
+                <li><a class="menu__item" href="faq.html">FAQ</a></li>
+                <li>
+                  <a class="menu__item" href="about-us.html">About us</a>
+                </li>
+                <li>
+                  <a class="menu__item" href="contacts.html">Contacts</a>
+                </li>
+                <li class="header__button__send-a-request">
+                  <a class="menu__item" href="contacts.html" type="button"
+                    >Send a Request</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </nav>
     </header>
   </body>

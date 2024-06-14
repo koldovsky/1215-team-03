@@ -1,0 +1,86 @@
+.our-promises {
+    background: linear-gradient(rgba(43, 60, 86, 0.9), rgba(29, 41, 59, 0.9)),
+    url("../img/about-us/about-us.our-promises.backgroud-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.our-promises_content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 90px 24px;
+}
+
+.our-promises_title {
+    font-family: var(--font-family-primary);
+    color: var(--text-color-light);
+    font-size: 2.125rem; /* 34px */
+    margin-bottom: 45px;
+}
+
+.our-promises_container {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+}
+
+.our-promises_card {
+    background: rgba(75, 89, 109, 0.7);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.our-promises_card-icon {
+    width: 3.125rem;
+    margin: 20px auto;
+}
+
+.our-promises_card-title, .our-promises_footer-text {
+    font-family: var(--font-family-primary);
+    font-size: 1.375rem;
+    letter-spacing: 1px;
+    line-height: 28.6px;
+}
+
+.our-promises_card-description {
+    font-family: var(--font-family-secondary);
+    font-size: 0.95rem;
+    letter-spacing: 0.03rem;
+    line-height: 1.64rem; 
+    margin: 20px;
+}
+
+.our-promises_footer {
+    margin: 20px auto;
+}
+
+@media (min-width: 767px) {
+    .our-promises_card{
+        max-width: 45%;
+    }
+
+    .our-promises_card-icon{
+        width: 4.375rem;
+    }
+
+    .our-promises_title {
+        font-size: 3rem; /* 48px */
+    }
+
+    .our-promises_card-title, .our-promises_footer-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1080px) {
+    .our-promises_card{
+        max-width: 30%;
+    }
+}
