@@ -9,8 +9,8 @@
 }
 
 :root {
-  --contacts-font-playfair: "Playfair Display", serif;
-  --contacts-font-raleway: "Raleway", sans-serif;
+  --contacts-font-title: "Playfair Display", serif;
+  --contacts-font-text: "Raleway", sans-serif;
   --text-color-light: #ffffff;
   --text-color-medium: #515c6d;
   --text-color-dark: #25364a;
