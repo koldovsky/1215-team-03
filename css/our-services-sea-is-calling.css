@@ -14,7 +14,7 @@
 }
 
 .sea-is-calling__title {
-  font-family: var(--contacts-font-playfair);
+  font-family: var(--font-family-primary);
   color: var(--text-color-dark);
   font-size: 3rem; /*48px*/
   letter-spacing: 0.08925rem; /*1.428px*/
@@ -28,7 +28,7 @@
 }
 
 .sea-is-calling__subtitle {
-  font-family: var(--contacts-font-playfair);
+  font-family: var(--font-family-primary);
   color: var(--text-color-dark);
   font-size: 1.5rem; /* 24px */
   letter-spacing: 0.061875rem; /*0.99px*/
@@ -36,13 +36,14 @@
 }
 
 .sea-is-calling__description {
-  font-family: var(--contacts-font-raleway);
+  font-family: var(--font-family-secondary);
   color: var(--text-color-medium);
   font-size: 0.94rem; /* 15px */
   letter-spacing: 0.03rem; /* 0.465px */
   min-width: 375px;
   line-height: 1.8rem;
   padding: 0 15px ;
+  overflow-wrap: break-word;
 }
 
 .sea-is-calling__block-with-image {

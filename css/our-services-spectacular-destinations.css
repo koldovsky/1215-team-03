@@ -22,7 +22,7 @@
   }
 
   .destinations__title {
-    font-family: var(--contacts-font-playfair);
+    font-family: var(--font-family-primary);
     color: var(--text-color-light);
     font-size: 3rem; /*48px*/
     letter-spacing: 0.08925rem; /*1.428px*/
@@ -63,7 +63,7 @@
   }
 
   .destination-place__image-description {
-    font-family: var(--contacts-font-raleway);
+    font-family: var(--font-family-third);
     color: var(--text-color-dark);
     font-size: 1.125rem; /*18px*/
     letter-spacing: 0.056rem; /*0.896px*/
