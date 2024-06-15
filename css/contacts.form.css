@@ -119,20 +119,28 @@
 }
 
 @media (min-width: 769px) {
-  .contacts__subtitle {
-    font-size: 1.4375rem;
-  }
-  .contacts__form {
-    padding: 52px 70px;
-  }
   .contacts__info {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 30px;
+    justify-content: space-between;
+  }
+  .contacts__subtitle {
+    font-size: 1.4375rem;
   }
   .contacts__form {
+    padding: 52px 70px;
+    width: 50%;
     height: 100%;
+  }
+  .contacts__article {
+    width: 50%;
+  }
+  .contacts__block {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
   }
 }
 
