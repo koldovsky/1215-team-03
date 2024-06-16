@@ -15,7 +15,6 @@
   letter-spacing: 0.08925rem; /*1.428px*/
   line-height: 2.125rem; /*34px*/
   text-align: center;
-  /* margin-bottom: 40px;*/
 }
 
 .crew-services__title {
@@ -24,8 +23,9 @@
 }
 
 .crew-services__options {
+  position: relative;
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
 .crew-services__option-image {
@@ -62,9 +62,8 @@
   text-align: center;
 }
 
-@media (min-width: 768px) {
-}
-
-@media (min-width: 992px) {
-  /* font-size: inherit; */
+@media (max-width: 768px) {
+  .crew-services__options {
+    flex-wrap: wrap;
+  }
 }
