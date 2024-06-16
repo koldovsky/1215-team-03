@@ -25,11 +25,12 @@
 
 .crew-services__options {
   display: flex;
+  align-items:flex-start;
 }
 
 .crew-services__option-image {
   padding: 31px 27px;
-  height: 50%;
+  height: 40%;
   width: 100%;
 }
 
