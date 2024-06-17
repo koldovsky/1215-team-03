@@ -2,42 +2,80 @@
 @import "header.css";
 @import "footer.css";
 
-body {
+.main-content {
   background-color: var(--ui-light-accent-color);
 }
 
 .main-content__title {
-  text-align: center;
-}
-
-h1 {
   font-family: var(--font-family-primary);
   font-size: 50px;
   margin-top: 100px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
-.destination{
-    width: 80%;
+.destination {
+  width: 80%;
+  display: flex;
+  background-color: var(--bg-color-primary);
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+  .destination__image-wrapper {
+    flex: 1;
+    overflow: hidden;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--bg-color-primary);
-    margin-bottom: 30px;
-    height: 500px;
-}
+  }
+  
+  .destination__image-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .destination__details {
+    flex: 1;
+    padding: 20px;
+  }
 
-@media (min-width: 320px){
-    .destination__image-wrapper{
-        display: flex;
-        width: 100%;
-        height: 500px;
-    }
-}
+  .destination__title{
+    margin-top: 50px; 
+    font-size: 1.5em;
+  }
 
-@media (min-width: 320px){
-    .destination__details{
-        width: 100%;
-        margin-left: 2%;
-    }
-}
+  .destination__dates{
+    color: var(--text-color-medium-light);
+    margin-top: 20px;
+  }
+
+  .destination__price{
+    font-family: var(--font-family-third);
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .destination__description{
+    font-family: var(--font-family-third);
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .destination__link{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 50px; 
+    border: 2px solid var(--text-color-medium-light);
+    border-radius: 50px; 
+    color: var(--text-color-dark);
+    font-weight: bold; 
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  .destination__link:hover{
+    background-color: var(--text-color-medium-light);
+    border-color: var(--bg-color-primary);
+    color: var(--bg-color-primary);
+  }

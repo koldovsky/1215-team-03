@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacts</title>
-    <link rel="shortcut icon" type="img/x-icon" href="./img/global/favicon.ico" />
+    <link
+      rel="shortcut icon"
+      type="img/x-icon"
+      href="./img/global/favicon.ico"
+    />
     <link rel="stylesheet" href="css/contacts.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
@@ -19,111 +23,24 @@
   </head>
   <body>
     <header>
-      <!-- <nav
+      <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="global.header-nav.partial.html"
-      ></nav> -->
+      ></nav>
     </header>
-    <section class="contacts">
-      <div class="contacts__map container">
-        <h1 class="contacts__title">Contacts</h1>
-        <div class="contacts__map-container">
-          <iframe
-            class="contacts__iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22145.400989243077!2d35.054478172980694!3d48.461085052711994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2cecce23add%3A0x47fd98728330908e!2z0J_QsNGA0Log0LrRg9C70YzRgtGD0YDRiyDQuCDQvtGC0LTRi9GF0LAg0LjQvCDQoi4g0JMuINCo0LXQstGH0LXQvdC60L4!5e0!3m2!1sru!2spl!4v1718017774665!5m2!1sru!2spl"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-      <div class="contacts__info container">
-        <article class="contacts__article">
-          <p class="contacts__description">
-            If you are planning your stunning summer vacation, we will be happy
-            to provide you with all the details and help you choose your perfect
-            yacht trip.
-          </p>
-          <div class="contacts__details">
-            <div class="contacts__block">
-              <h3 class="contacts__subtitle">Address</h3>
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  23 Broad St, Brighton BN2 1TJ, UK
-                </li>
-              </ul>
-            </div>
-            <div class="contacts__block">
-              <h3 class="contacts__subtitle">Hours</h3>
-              <ul class="contacts__list">
-                <li class="contacts__item">Monday - Saturday: 11 AM - 9 PM</li>
-                <li class="contacts__item">Sunday: 11 AM - 7 PM</li>
-              </ul>
-            </div>
-            <div class="contacts__block">
-              <h3 class="contacts__subtitle">Contacts</h3>
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <a class="contacts__link" href="tel:+12345678900"
-                    >+1 (234) 567 89 00</a
-                  >
-                </li>
-                <li class="contacts__item">
-                  <a class="contacts__link" href="mailto:yacht@email.com"
-                    >yacht@email.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="contacts__social">
-              <a class="contacts__social-link" href="https://x.com/SoftServeInc"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
-              <a
-                class="contacts__social-link"
-                href="https://www.youtube.com/@programmingmentorua"
-                ><i class="contacts__icon fa-brands fa-youtube"></i
-              ></a>
-              <a
-                class="contacts__social-link"
-                href="https://www.instagram.com/softserve_people/"
-                ><i class="contacts__icon fa-brands fa-square-instagram"></i
-              ></a>
-            </div>
-          </div>
-        </article>
-        <form
-          class="contacts__form"
-          action="https://formspree.io/f/mqkrrapn"
-          method="post"
-        >
-          <input
-            class="contacts__input contacts__input--name"
-            type="text"
-            name="name"
-            placeholder="Name*"
-            required
-          />
-          <input
-            class="contacts__input contacts__input--phone"
-            type="tel"
-            name="phone"
-            placeholder="Phone number*"
-            required
-          />
-          <input
-            class="contacts__input contacts__input--email"
-            type="email"
-            name="email"
-            placeholder="E-mail"
-            required
-          />
-          <input class="contacts__submit" type="submit" value="Let's Sail!" />
-        </form>
-      </div>
-    </section>
+    <main class="contacts-main">
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="contacts.map.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="contacts.form.partial.html"
+      ></section>
+    </main>
     <footer
       data-hx-trigger="load"
       data-hx-swap="outerHTML"

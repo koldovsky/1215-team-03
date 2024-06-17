@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="contacts__info container">
+      <article class="contacts__article">
+        <p class="contacts__description">
+          If you are planning your stunning summer vacation, we will be happy to
+          provide you with all the details and help you choose your perfect
+          yacht trip.
+        </p>
+        <div class="contacts__details">
+          <div class="contacts__block">
+            <h3 class="contacts__subtitle">Address</h3>
+            <ul class="contacts__list">
+              <li class="contacts__item">23 Broad St, Brighton BN2 1TJ, UK</li>
+            </ul>
+          </div>
+          <div class="contacts__block">
+            <h3 class="contacts__subtitle">Hours</h3>
+            <ul class="contacts__list">
+              <li class="contacts__item">Monday - Saturday: 11 AM - 9 PM</li>
+              <li class="contacts__item">Sunday: 11 AM - 7 PM</li>
+            </ul>
+          </div>
+          <div class="contacts__block">
+            <h3 class="contacts__subtitle">Contacts</h3>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+12345678900"
+                  >+1 (234) 567 89 00</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:yacht@email.com"
+                  >yacht@email.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__social">
+            <a class="contacts__social-link" href="https://x.com/SoftServeInc"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              class="contacts__social-link"
+              href="https://www.youtube.com/@programmingmentorua"
+              ><i class="contacts__icon fa-brands fa-youtube"></i
+            ></a>
+            <a
+              class="contacts__social-link"
+              href="https://www.instagram.com/softserve_people/"
+              ><i class="contacts__icon fa-brands fa-square-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </article>
+      <form
+        class="contacts__form"
+        action="https://formspree.io/f/mqkrrapn"
+        method="post"
+      >
+        <div class="contacts__input-fields">
+          <input
+            class="contacts__input contacts__input--name"
+            type="text"
+            name="name"
+            placeholder="Name*"
+            required
+          />
+          <input
+            class="contacts__input contacts__input--phone"
+            type="tel"
+            name="phone"
+            placeholder="Phone number*"
+            required
+          />
+          <input
+            class="contacts__input contacts__input--email"
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            required
+          />
+          <input class="contacts__submit" type="submit" value="Let's Sail!" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

@@ -9,8 +9,6 @@
 }
 
 :root {
-  --contacts-font-playfair: "Playfair Display", serif;
-  --contacts-font-raleway: "Raleway", sans-serif;
   --text-color-light: #ffffff;
   --text-color-medium: #515c6d;
   --text-color-dark: #25364a;
@@ -22,6 +20,8 @@
   --text-color-medium: #515c6d;
   --text-color-dark: #25364a;
   --icon-background: #d0bd8c;
+  --contacts-social-icons-color: #364f6c;
+  --input-focus-color-primary: #3b99fc;
 
   /* проінспектував сайт, додав всі кольори що знайшов і назвав змінні відповідно за кольором та призначенням */
   --bg-color-primary: #ffffff;

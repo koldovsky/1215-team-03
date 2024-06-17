@@ -1,0 +1,81 @@
+.payment-options {
+  padding: 90px 0 100px;
+  width: 100%;
+  margin: auto;
+  background: linear-gradient(rgb(240, 238, 227, 0.85), rgb(240, 238, 227, 0.8)),
+    url(../img/our-services/our-service-payment-options-background.jpg);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.payment-options__title-content {
+  font-family: var(--font-family-primary);
+  color: var(--text-color-dark);
+  font-size: 2.125rem; /*34px*/
+  letter-spacing: 0.08925rem; /*1.428px*/
+  line-height: 2.125rem; /*34px*/
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.payment-options__title {
+  display: flex;
+  justify-content: center;
+}
+
+.payment-options__options {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 60px;
+  margin-right: 60px;
+  justify-content: space-between;
+}
+
+.payment-options__options-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: var(--text-color-light);
+}
+
+.payment-options__options-option-title {
+  display: flex;
+  font-family: var(--font-family-primary);
+  color: var(--text-color-dark);
+  font-size: 1.5rem; /* 24px */
+  letter-spacing: 0.061875rem; /*0.99px*/
+  text-align: left;
+  padding: 31px 27px;
+}
+
+.payment-options__options-option-description {
+  display: flex;
+  font-family: var(--font-family-secondary);
+  color: var(--text-color-medium);
+  font-size: 0.94rem; /* 15px */
+  letter-spacing: 0.03rem; /* 0.465px */
+  min-width: 130px;
+  line-height: 1.8rem;
+  overflow-wrap: break-word;
+  padding: 31px 27px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .payment-options__options {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: auto;
+  }
+}
