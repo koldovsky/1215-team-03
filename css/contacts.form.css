@@ -73,6 +73,12 @@
     font-size: 20px;
   }
 }
+  .contacts__social-link:hover {
+    background-color: var(--contacts-social-icons-color);
+  }
+  .contacts__social-link i:hover {
+    color: var(--bg-color-primary);
+  }
 
 .contacts__form {
   background-color: var(--bg-color-light);
