@@ -13,3 +13,18 @@ function makeNegative(num) {
 function move(position, roll) {
   return position + roll * 2;
 }
+
+// https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
+function greet(name, owner) {
+  return name === owner ? 'Hello boss' : 'Hello guest'
+}
+
+// https://www.codewars.com/kata/keep-hydrated-1/train/javascript
+function litres(time) {
+  return Math.floor(time / 2)
+}
+
+// https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
+function lovefunc(flower1, flower2) {
+  return flower1 % 2 !== flower2 % 2
+}
