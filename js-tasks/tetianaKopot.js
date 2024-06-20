@@ -1,35 +1,47 @@
-//https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
-function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
-    return laLigaGoals + copaDelReyGoals + championsLeagueGoals
-  }
-  
-  //https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
-  function makeNegative(num) {
-    if (num > 0) {
-      return num * (-1)
-    }
-    return num
-  }
-  
-  //https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
-  function move(position, roll) {
-    return position + 2 * roll
-  }
-  
-  //https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
-  function greet(name, owner) {
-    return name === owner ? 'Hello boss' : 'Hello guest'
-  }
-  
-  //https://www.codewars.com/kata/keep-hydrated-1/train/javascript
-  function litres(time) {
-    return Math.floor(time * 0.5)
-  }
-  
-  //https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
-  function lovefunc(flower1, flower2) {
-    return (
-      (flower1 % 2 === 0 && flower2 % 2 === 1) ||
-      (flower1 % 2 === 1 && flower2 % 2 === 0)
-    )
-  }
+//https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
+function stringToArray(string) {
+  return string.split(' ')
+}
+
+//https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
+
+//option 1
+function DNAtoRNA(dna) {
+  return dna
+    .split('')
+    .map((item) => (item === 'T' ? 'U' : item))
+    .join('')
+}
+
+//option 2
+function DNAtoRNA(dna) {
+  return dna.replace(/T/g, 'U')
+}
+
+//https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
+
+//option 1
+var min = function (list) {
+  list.sort((a, b) => a - b)
+  return list[0]
+}
+
+var max = function (list) {
+  list.sort((a, b) => b - a)
+  return list[0]
+}
+
+//option 2
+var min = function (list) {
+  return Math.min(...list)
+}
+
+var max = function (list) {
+  return Math.max(...list)
+}
+
+//https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
+function min(arr, toReturn) {
+  const minValue = Math.min(...arr)
+  return toReturn === 'value' ? minValue : arr.indexOf(minValue)
+}
