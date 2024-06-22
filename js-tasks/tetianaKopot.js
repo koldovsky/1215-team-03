@@ -1,84 +1,62 @@
-//https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
-function stringToArray(string) {
-  return string.split(' ')
-}
+//https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
+const findSmallestInt = (arr) => Math.min(...arr)
 
-//https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
+//https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
+const circleCircumference = (circle) => 2 * Math.PI * circle.radius
 
-//option 1
-function DNAtoRNA(dna) {
-  return dna
-    .split('')
-    .map((item) => (item === 'T' ? 'U' : item))
-    .join('')
-}
-
-//option 2
-function DNAtoRNA(dna) {
-  return dna.replace(/T/g, 'U')
-}
-
-//https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
-
-//option 1
-var min = function (list) {
-  list.sort((a, b) => a - b)
-  return list[0]
-}
-
-var max = function (list) {
-  list.sort((a, b) => b - a)
-  return list[0]
-}
-
-//option 2
-var min = function (list) {
-  return Math.min(...list)
-}
-
-var max = function (list) {
-  return Math.max(...list)
-}
-
-//https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
-function min(arr, toReturn) {
-  const minValue = Math.min(...arr)
-  return toReturn === 'value' ? minValue : arr.indexOf(minValue)
-}
-
-
-//***********Додаткові**************
-//https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
-function doubleInteger(i) {
-  return i * 2
-}
-
-//https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
-function twiceAsOld(dadYearsOld, sonYearsOld) {
-  return Math.abs(dadYearsOld - sonYearsOld * 2)
-}
-
-//https://www.codewars.com/kata/5933a1f8552bc2750a0000ed/train/javascript
-function nthEven(n) {
-  return n * 2 - 2
-}
-
-//https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/javascript
-function getRealFloor(n) {
-  if (n > 13) {
-    return n - 2
-  } else if (n > 0) {
-    return n - 1
+//https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
+function giveMeFive(obj) {
+  let five = []
+  for (const key in obj) {
+    if (key.length === 5) {
+      five.push(key)
+    }
+    if (typeof obj[key] === 'string' && obj[key].length === 5) {
+      five.push(obj[key])
+    }
   }
-  return n
+  return five
 }
 
-//https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
-function past(h, m, s) {
-  return s * 1000 + m * 60000 + h * 3600000
+//https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
+function buildFun(n) {
+  let res = []
+
+  for (let i = 0; i < n; i++) {
+    res.push(
+      (function (x) {
+        return function () {
+          return x
+        }
+      })(i)
+    )
+  }
+  return res
 }
 
-//https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript
-function isDivisible(n, x, y) {
-  return n % x === 0 && n % y === 0
+//https://www.codewars.com/kata/fun-with-es6-classes-number-2-animals-and-inheritance/train/javascript
+class Shark extends Animal {
+  constructor(name, age, status) {
+    super(name, age, 0, 'shark', status)
+  }
+}
+
+class Cat extends Animal {
+  constructor(name, age, status) {
+    super(name, age, 4, 'cat', status)
+  }
+  introduce() {
+    return `${super.introduce()}  Meow meow!`
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, age, status, master) {
+    super(name, age, 4, 'dog', status)
+    this.master = master
+  }
+
+  greetMaster() {
+    return `Hello ${this.master}`
+  }
 }
