@@ -20,9 +20,9 @@ function giveMeFive(obj) {
 
 //https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
 function buildFun(n) {
-  var res = []
+  let res = []
 
-  for (var i = 0; i < n; i++) {
+  for (let i = 0; i < n; i++) {
     res.push(
       (function (x) {
         return function () {
