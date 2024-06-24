@@ -1,7 +1,7 @@
 .fleet-cards {
   background-color: var(--bg-color-light);
 
-  &.bg-white {
+  &:nth-child(2) {
     background-color: var(--bg-color-primary);
   }
 
