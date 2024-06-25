@@ -1,7 +1,7 @@
 .fleet-cards {
   background-color: var(--bg-color-light);
 
-  &:nth-child(2) {
+  &:nth-child(even) {
     background-color: var(--bg-color-primary);
   }
 
@@ -121,15 +121,15 @@
         aspect-ratio: 1 / 0.85;
         overflow: hidden;
 
+        &:nth-of-type(3) .fleet-card__fleet-container-imgbox__item {
+          object-position: 50% 0;
+        }
+
         .fleet-card__fleet-container-imgbox__item {
           width: 100%;
           height: 100%;
           object-fit: cover;
           transition: 0.5s;
-
-          &.change-position {
-            object-position: 50% 0;
-          }
 
           &:hover {
             transition: 0.5s;
