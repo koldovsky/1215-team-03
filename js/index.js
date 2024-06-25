@@ -1,5 +1,5 @@
 function init() {
-  import("./our-fleet.js");
+  import("...");
 }
 
 const totalPartials = document.querySelectorAll(
