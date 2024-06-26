@@ -18,47 +18,61 @@
           action="https://formspree.io/f/xayrrnea"
           method="post"
         >
-          <input
-            class="our-fleet-form__input"
-            type="text"
-            oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
-            placeholder="Name*"
-            required
-            name="client-name"
-          />
-          <input
-            class="our-fleet-form__input"
-            type="tel"
-            pattern="[0-9]*" inputmode="numeric"
-            placeholder="Phone number*"
-            required
-            name="client-phone"
-          />
-          <input
-            class="our-fleet-form__input"
-            type="email"
-            placeholder="E-mail*"
-            required
-            name="client-email"
-          />
-          <select class="our-fleet-form__select" name="choose-trip">
-            <option class="our-fleet-form__option" disabled hidden selected>Choose yuor trip</option>
-            <option class="our-fleet-form__option" value="Affable Croatian Isles">
-              Affable Croatian Isles
-            </option>
-            <option class="our-fleet-form__option" value="Vacation Around Amalfi">
-              Vacation Around Amalfi
-            </option>
-            <option class="our-fleet-form__option" value="Through the Fjords of Norway">
-              Through the Fjords of Norway
-            </option>
-            <option class="our-fleet-form__option" value="Non-touristic Turkey">Non-touristic Turkey</option>
-            <option class="our-fleet-form__option" value="Ancient Greece">Ancient Greece</option>
-            <option class="our-fleet-form__option" value="Spain + Nightlife at Ibiza">
-              Spain + Nightlife at Ibiza
-            </option>
-          </select>
-          <input class="our-fleet-form__input our-fleet-form__submit" type="submit" value="Send a Request" />
+          <div class="our-fleet-form__form-group">
+            <input
+              class="our-fleet-form__input"
+              type="text"
+              oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
+              placeholder="Name*"
+              required
+              name="client-name"
+            />
+            <div class="error-message">Name is required.</div>
+          </div>
+          <div class="our-fleet-form__form-group">
+            <input
+              class="our-fleet-form__input"
+              type="tel"
+              pattern="[0-9]*" inputmode="numeric"
+              placeholder="Phone number*"
+              required
+              name="client-phone"
+            />
+            <div class="error-message">Phone number is required.</div>
+          </div>
+          <div class="our-fleet-form__form-group">
+            <input
+              class="our-fleet-form__input"
+              type="email"
+              placeholder="E-mail*"
+              required
+              name="client-email"
+            />
+            <div class="error-message">Valid email is required.</div>
+          </div>
+          <div class="our-fleet-form__form-group">
+            <select class="our-fleet-form__select" name="choose-trip">
+              <option class="our-fleet-form__option" disabled hidden selected>Choose yuor trip</option>
+              <option class="our-fleet-form__option" value="Affable Croatian Isles">
+                Affable Croatian Isles
+              </option>
+              <option class="our-fleet-form__option" value="Vacation Around Amalfi">
+                Vacation Around Amalfi
+              </option>
+              <option class="our-fleet-form__option" value="Through the Fjords of Norway">
+                Through the Fjords of Norway
+              </option>
+              <option class="our-fleet-form__option" value="Non-touristic Turkey">Non-touristic Turkey</option>
+              <option class="our-fleet-form__option" value="Ancient Greece">Ancient Greece</option>
+              <option class="our-fleet-form__option" value="Spain + Nightlife at Ibiza">
+                Spain + Nightlife at Ibiza
+              </option>
+            </select>
+            <div class="error-message">Please choose a trip.</div>
+          </div>
+          <div class="our-fleet-form__form-group">
+            <input class="our-fleet-form__input our-fleet-form__submit" type="submit" value="Send a Request" />
+          </div>
         </form>
       </div>
     </section>

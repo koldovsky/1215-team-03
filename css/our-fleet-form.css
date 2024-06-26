@@ -92,6 +92,18 @@
   color: var(--text-color-secondary);
 }
 
+.our-fleet-form__form-group .error {
+  border-color: #FF0000;
+}
+.our-fleet-form__form-group .error-message {
+  color: #FF0000;
+  font-size: 12px;
+  display: none;
+}
+.form-group .error + .error-message {
+  display: block;
+}
+
 .our-fleet-form__submit {
   background-color: var(--bg-color-secondary);
   color: var(--bg-color-light);
