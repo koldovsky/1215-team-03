@@ -41,6 +41,7 @@
   --font-family-primary: "Playfair Display", serif;
   --font-family-secondary: "Raleway", sans-serif;
   --font-family-third: "Rubik", sans-serif;
+  --error-color: #FF0000;
   /* проінспектував сайт, додав всі кольори що знайшов і назвав змінні відповідно за кольором та призначенням */
 }
 

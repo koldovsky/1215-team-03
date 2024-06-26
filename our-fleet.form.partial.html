@@ -15,6 +15,7 @@
         </p>
         <form
           class="our-fleet-form__area"
+          id="sail-form"
           action="https://formspree.io/f/xayrrnea"
           method="post"
         >
@@ -22,9 +23,7 @@
             <input
               class="our-fleet-form__input"
               type="text"
-              oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')"
               placeholder="Name*"
-              required
               name="client-name"
             />
             <div class="error-message">Name is required.</div>
@@ -33,9 +32,7 @@
             <input
               class="our-fleet-form__input"
               type="tel"
-              pattern="[0-9]*" inputmode="numeric"
               placeholder="Phone number*"
-              required
               name="client-phone"
             />
             <div class="error-message">Phone number is required.</div>
@@ -45,14 +42,13 @@
               class="our-fleet-form__input"
               type="email"
               placeholder="E-mail*"
-              required
               name="client-email"
             />
             <div class="error-message">Valid email is required.</div>
           </div>
           <div class="our-fleet-form__form-group">
             <select class="our-fleet-form__select" name="choose-trip">
-              <option class="our-fleet-form__option" disabled hidden selected>Choose yuor trip</option>
+              <option class="our-fleet-form__option" disabled hidden selected>Choose your trip</option>
               <option class="our-fleet-form__option" value="Affable Croatian Isles">
                 Affable Croatian Isles
               </option>
