@@ -1,5 +1,5 @@
 function init() {
-  import("...");
+  import('./header.js');
 }
 
 const totalPartials = document.querySelectorAll(

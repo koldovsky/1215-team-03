@@ -1,5 +1,4 @@
 /* General styles */
-
 header {
   width: 100%;
 }
@@ -60,7 +59,6 @@ header {
 }
 
 /* Media queries */
-
 @media (max-width: 1000px) {
   .header__hero-nav {
     display: flex;
@@ -71,15 +69,18 @@ header {
 
   #menu__toggle {
     opacity: 0;
+    position: absolute;
   }
+  
   .menu__btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 100px;
-    right: 50px;
-    width: 26px;
-    height: 26px;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     z-index: 1001;
   }
@@ -90,59 +91,68 @@ header {
     display: block;
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background-color: var(--ui-light-shade-color);
+    transition: all 0.3s;
   }
+  
   .menu__btn > span::before {
     content: "";
     top: -8px;
   }
+  
   .menu__btn > span::after {
     content: "";
     top: 8px;
   }
 
-  .header__nav-menu {
-    display: block;
+  .header__nav-menu-wrapper {
+    display: none;
     position: fixed;
-    visibility: hidden;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    text-align: center;
     background-color: var(--ui-dark-accent-color);
     z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
-  .menu__item {
-    display: block;
-    padding: 12px 24px;
-    color: var(--ui-dark-accent-color);
-    font-size: 20px;
-    font-weight: 1000;
-    text-decoration: none;
-  }
-  .menu__item:hover {
-    background-color: var(--ui-light-accent-color);
-  }
-
-  #menu__toggle:checked ~ .menu__btn > span {
+  #menu__toggle:checked + .menu__btn > span {
     transform: rotate(45deg);
   }
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::after {
+  
+  #menu__toggle:checked + .menu__btn > span::before {
     top: 0;
     transform: rotate(90deg);
   }
-  #menu__toggle:checked ~ .header__nav-menu {
-    visibility: visible;
+  
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  #menu__toggle:checked ~ .header__nav-menu-wrapper {
+    display: flex;
+  }
+
+  .header__nav-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  .header__nav-menu li {
+    margin: 20px 0;
+  }
+
+  .header__button__send-a-request {
+    margin-top: 20px;
   }
 }
 
