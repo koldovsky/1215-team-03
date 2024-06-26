@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>One Tour</title>
-    <link rel="shortcut icon" type="img/x-icon" href="./img/global/favicon.ico" />
+    <link
+      rel="shortcut icon"
+      type="img/x-icon"
+      href="./img/global/favicon.ico"
+    />
     <link rel="stylesheet" href="css/index.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
@@ -18,254 +22,282 @@
     ></script>
   </head>
   <body>
-    <section class="enjoy-the-beauty-of-amalfi">
-      <h2 class="enjoy-the-beauty-of-amalfi__title">
-        Enjoy the Beauty of Amalfi
-      </h2>
-      <div class="enjoy-the-beauty-of-amalfi__image-container">
-        <img
-          width="400"
-          src="img/one-tour/cityviewfromwater.jpg"
-          alt="City view from water"
-        />
-        <img
-          width="400"
-          src="img/one-tour/endoftheisland.jpg"
-          alt="End of Island"
-        />
-        <img width="400" src="img/one-tour/islandview.jpg" alt="Island view" />
-        <img width="400" src="img/one-tour/mountains.jpg" alt="Mountains" />
-        <img width="400" src="img/one-tour/peopleswim.jpg" alt="People swim" />
-        <img
-          width="400"
-          src="img/one-tour/yachtsnearisland.jpg"
-          alt="Yachts near island"
-        />
-      </div>
-    </section>
-    <section class="travel-options">
-      <h2 class="travel-options__title">Travel Options</h2>
-      <div class="travel-options-cabin">
-        <img
-          class="travel-options-cabin__picture"
-          width="400"
-          src="img/one-tour/cabin.jpg"
-          alt="Picture of Cabin"
-        />
-        <h3 class="travel-options-cabin__title">Cabin</h3>
-        <p class="travel-options-cabin__text">
-          Doubles and twins from 800€ per person Join the company of travel
-          lovers like you and party every evening
-        </p>
-      </div>
-      <div class="travel-options-yacht">
-        <img
-          class="travel-options-yacht__picture"
-          width="400"
-          src="img/one-tour/yacht.jpg"
-          alt="Picture of Yacht"
-        />
-        <h3 class="travel-options-yacht__title">Yacht</h3>
-        <p class="travel-options-yacht__text">
-          6-12 guests from 3500 € per yacht Rent your own yacht and enjoy the
-          trip the way you like it!
-        </p>
-      </div>
-    </section>
-    <section class="one-tour-gallery">
-      <div class="one-tour-gallery__image-container">
-        <img src="img/one-tour/berthedyacht.jpg" alt="Yacht at berth" />
-        <img
-          src="img/one-tour/manonedgeofyacht.jpg"
-          alt="Man standig on edge of yacht"
-        />
-        <img
-          src="img/one-tour/womantakessunbathonyacht.jpg"
-          alt="Woman takes sunbath"
-        />
-        <img
-          src="img/one-tour/maninyachtbay.jpg"
-          alt="Man looking at yacht in yacht bay"
-        />
-        <img
-          src="img/one-tour/womanonbow.jpg"
-          alt="Woman standing on bow of yacht"
-        />
-        <img
-          src="img/one-tour/peoplerestonyacht.jpg"
-          alt="People rest on deck of yacht"
-        />
-        <img
-          src="img/one-tour/yachtsailnearisland.jpg"
-          alt="Yacht sails near island"
-        />
-      </div>
-    </section>
-    <section class="itinerary">
-      <h2 class="itinerary__title">Itinerary</h2>
-      <div class="day-one">
-        <img src="img/one-tour/dayone.jpg" alt="Day One Logo" />
-        <h3>Salerno</h3>
+    <header>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial"
+      ></nav>
+    </header>
+    <main>
+      <section class="enjoy-the-beauty-of-amalfi">
+        <h2 class="enjoy-the-beauty-of-amalfi__title">
+          Enjoy the Beauty of Amalfi
+        </h2>
+        <div class="enjoy-the-beauty-of-amalfi__image-container">
+          <img
+            width="400"
+            src="img/one-tour/cityviewfromwater.jpg"
+            alt="City view from water"
+          />
+          <img
+            width="400"
+            src="img/one-tour/endoftheisland.jpg"
+            alt="End of Island"
+          />
+          <img
+            width="400"
+            src="img/one-tour/islandview.jpg"
+            alt="Island view"
+          />
+          <img width="400" src="img/one-tour/mountains.jpg" alt="Mountains" />
+          <img
+            width="400"
+            src="img/one-tour/peopleswim.jpg"
+            alt="People swim"
+          />
+          <img
+            width="400"
+            src="img/one-tour/yachtsnearisland.jpg"
+            alt="Yachts near island"
+          />
+        </div>
+      </section>
+      <section class="travel-options">
+        <h2 class="travel-options__title">Travel Options</h2>
+        <div class="travel-options-cabin">
+          <img
+            class="travel-options-cabin__picture"
+            width="400"
+            src="img/one-tour/cabin.jpg"
+            alt="Picture of Cabin"
+          />
+          <h3 class="travel-options-cabin__title">Cabin</h3>
+          <p class="travel-options-cabin__text">
+            Doubles and twins from 800€ per person Join the company of travel
+            lovers like you and party every evening
+          </p>
+        </div>
+        <div class="travel-options-yacht">
+          <img
+            class="travel-options-yacht__picture"
+            width="400"
+            src="img/one-tour/yacht.jpg"
+            alt="Picture of Yacht"
+          />
+          <h3 class="travel-options-yacht__title">Yacht</h3>
+          <p class="travel-options-yacht__text">
+            6-12 guests from 3500 € per yacht Rent your own yacht and enjoy the
+            trip the way you like it!
+          </p>
+        </div>
+      </section>
+      <section class="one-tour-gallery">
+        <div class="one-tour-gallery__image-container">
+          <img src="img/one-tour/berthedyacht.jpg" alt="Yacht at berth" />
+          <img
+            src="img/one-tour/manonedgeofyacht.jpg"
+            alt="Man standig on edge of yacht"
+          />
+          <img
+            src="img/one-tour/womantakessunbathonyacht.jpg"
+            alt="Woman takes sunbath"
+          />
+          <img
+            src="img/one-tour/maninyachtbay.jpg"
+            alt="Man looking at yacht in yacht bay"
+          />
+          <img
+            src="img/one-tour/womanonbow.jpg"
+            alt="Woman standing on bow of yacht"
+          />
+          <img
+            src="img/one-tour/peoplerestonyacht.jpg"
+            alt="People rest on deck of yacht"
+          />
+          <img
+            src="img/one-tour/yachtsailnearisland.jpg"
+            alt="Yacht sails near island"
+          />
+        </div>
+      </section>
+      <section class="itinerary">
+        <h2 class="itinerary__title">Itinerary</h2>
+        <div class="day-one">
+          <img class="day__logo" src="img/one-tour/dayone.jpg" alt="Day One Logo" />
+          <h3>Salerno</h3>
+          <p>
+            On the first day, our task is to get to the marina get on board and
+            give the trip a head up. Skippers provide the yachting briefing, you
+            also can buy food and drinks and relax, preparing for start.
+          </p>
+        </div>
+        <div class="day-two">
+          <img class="day__logo" src="img/one-tour/daytwo.jpg" alt="Day Two Logo" />
+          <h3>Positano</h3>
+          <p>
+            We go out to sea. Our goal is Positano, a very cozy, beautiful,
+            truly Neapolitan town. We will stop in a small city bay, go ashore
+            and go for a walk. When we get tired - we will visit one of the
+            local home restaurants, where the owner will offer us cold wine and
+            fresh seafood.
+          </p>
+        </div>
+        <div class="day-three">
+          <img class="day__logo" src="img/one-tour/daythree.jpg" alt="Day Three Logo" />
+          <h3>Pompeii</h3>
+          <p>
+            We transfer the past of Italy, Pompeii. During the eruption of
+            Vesuvius, the city was buried under a multi-meter layer of ash in 79
+            BC, and today there is a huge open-air museum, the legacy of UNESCO.
+            In the afternoon, it is possible to bathe offshore and have some
+            rest on the yachts
+          </p>
+        </div>
+        <div class="day-four">
+          <img class="day__logo" src="img/one-tour/dayfour.jpg" alt="Day Four Logo" />
+          <h3>Ischia Island</h3>
+          <p>
+            Another aristocratic and fascinating place. The main attraction of
+            the island is the majestic castle, guarding the Bay of Naples from
+            uninvited guests. We climb the hill and wander along its walls.
+            Also, there are thermal springs which are used by local SPA-centers.
+            You can visit them at your wish.
+          </p>
+        </div>
+        <div class="day-five">
+          <img class="day__logo" src="img/one-tour/dayfive.jpg" alt="Day Five Logo" />
+          <h3>Procida, Sorrento</h3>
+          <p>
+            Literally half an hour in the morning to the island of Procida- and
+            we are having breakfast in its beautiful bay. Then we raise the
+            anchor and go to Sorrento - another beautiful, wonderful, real
+            Neapolitan town. We spend the evening walking along Sorrento: here
+            we will see the church of San Francesco of the 18th century and the
+            Basilica of St. Antonio.
+          </p>
+        </div>
+        <div class="day-six"></div>
+        <img class="day__logo" src="img/one-tour/daysix.jpg" alt="Day Six Logo" />
+        <h3>Amalfi</h3>
         <p>
-          On the first day, our task is to get to the marina get on board and
-          give the trip a head up. Skippers provide the yachting briefing, you
-          also can buy food and drinks and relax, preparing for start.
+          On the way to Amalfi we will stop at the Grotta di Smeraldo, a cave
+          with real stalactites and stalagmites. It is equipped for tourists,
+          everything is beautifully highlighted. Amalfi literally built in the
+          cliff. The history in Amalfi is mixed with modernity: on the streets
+          along which the Roman emperors walked, today there are youth bars and
+          restaurants. It will be noisy, fun and romantic. After a night in
+          Amalfi, we set back to Salerno not forgetting to take photos and
+          swimming in the sea.
         </p>
-      </div>
-      <div class="day-two">
-        <img src="img/one-tour/daytwo.jpg" alt="Day Two Logo" />
-        <h3>Positano</h3>
-        <p>
-          We go out to sea. Our goal is Positano, a very cozy, beautiful, truly
-          Neapolitan town. We will stop in a small city bay, go ashore and go
-          for a walk. When we get tired - we will visit one of the local home
-          restaurants, where the owner will offer us cold wine and fresh
-          seafood.
-        </p>
-      </div>
-      <div class="day-three">
-        <img src="img/one-tour/daythree.jpg" alt="Day Three Logo" />
-        <h3>Pompeii</h3>
-        <p>
-          We transfer the past of Italy, Pompeii. During the eruption of
-          Vesuvius, the city was buried under a multi-meter layer of ash in 79
-          BC, and today there is a huge open-air museum, the legacy of UNESCO.
-          In the afternoon, it is possible to bathe offshore and have some rest
-          on the yachts
-        </p>
-      </div>
-      <div class="day-four">
-        <img src="img/one-tour/dayfour.jpg" alt="Day Four Logo" />
-        <h3>Ischia Island</h3>
-        <p>
-          Another aristocratic and fascinating place. The main attraction of the
-          island is the majestic castle, guarding the Bay of Naples from
-          uninvited guests. We climb the hill and wander along its walls. Also,
-          there are thermal springs which are used by local SPA-centers. You can
-          visit them at your wish.
-        </p>
-      </div>
-      <div class="day-five">
-        <img src="img/one-tour/dayfive.jpg" alt="Day Five Logo" />
-        <h3>Procida, Sorrento</h3>
-        <p>
-          Literally half an hour in the morning to the island of Procida- and we
-          are having breakfast in its beautiful bay. Then we raise the anchor
-          and go to Sorrento - another beautiful, wonderful, real Neapolitan
-          town. We spend the evening walking along Sorrento: here we will see
-          the church of San Francesco of the 18th century and the Basilica of
-          St. Antonio.
-        </p>
-      </div>
-      <div class="day-six"></div>
-      <img src="img/one-tour/daysix.jpg" alt="Day Six Logo" />
-      <h3>Amalfi</h3>
-      <p>
-        On the way to Amalfi we will stop at the Grotta di Smeraldo, a cave with
-        real stalactites and stalagmites. It is equipped for tourists,
-        everything is beautifully highlighted. Amalfi literally built in the
-        cliff. The history in Amalfi is mixed with modernity: on the streets
-        along which the Roman emperors walked, today there are youth bars and
-        restaurants. It will be noisy, fun and romantic. After a night in
-        Amalfi, we set back to Salerno not forgetting to take photos and
-        swimming in the sea.
-      </p>
-    </section>
-    <section class="where-we-start">
-      <h2>Where We Start</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.571287499887!2d14.767311377719098!3d40.673402781122306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bc2396154cdc3%3A0xc3702f48656f9d41!2zUGlhenphIGRlbGxhIENvbmNvcmRpYSwgODQxMjMgU2FsZXJubyBTQSwg0IbRgtCw0LvRltGP!5e0!3m2!1suk!2sus!4v1717846133426!5m2!1suk!2sus"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-    <section class="services-included-in-every-tariff">
-      <h2 class="services-included-in-every-tariff__title">
-        Services Included in Every Tariff
-      </h2>
-      <div>
-        <!--<img src="" alt="" />-->
-        <p>Yacht/Cabin Rental</p>
-      </div>
-      <div>
-        <!--<img src="" alt="" />-->
-        <p>Captain</p>
-      </div>
-      <div>
-        <!--<img src="" alt="" />-->
-        <p>Fuel</p>
-      </div>
-      <div>
-        <!--<img src="" alt="" />-->
-        <p>Excursions on the Route</p>
-      </div>
-      <div>
-        <!--<img src="" alt="" />-->
-        <p>Breakfast in Procida</p>
-      </div>
-      <div>
-        <!--<img src="" alt="" />-->
-        <p>WiFi</p>
-      </div>
-    </section>
-    <section class="additional-services">
-      <h2 class="additional-services__title">Additional Services</h2>
-      <div>
-        <!--<img src="" alt="" />-->
-        <p>Delicious Meals</p>
-      </div>
-      <div>
-        <!--<img src="" alt="" />-->
-        <p>Drinks</p>
-      </div>
-      <div>
-        <!--<img src="" alt="" />-->
-        <p>Diving Training</p>
-      </div>
-    </section>
-    <section class="what-our-guests-say">
-      <h2>What our guests say</h2>
-      <div>
-        <figure>
-          <img src="img/one-tour/alice.jpg" alt="Alice Photo" />
-          <figcaption>Alice, 23 y.0.</figcaption>
-        </figure>
-        <h3>Fascinating!</h3>
-        <p>
-          This was my first time visiting Italy, and it was incredible!
-          Everything that they say about this country, its food, wine and people
-          is true! Going there on a yacht was an even greater experience!
-        </p>
-      </div>
-      <div>
-        <figure>
-          <img src="img/one-tour/john.jpg" alt="John Photo" />
-          <figcaption>John, 32 y.o.</figcaption>
-        </figure>
-        <h3>Te amo, Italy!</h3>
-        <p>
-          Thanks our Captain Jack and the whole crew for making this vacation
-          unforgettable! I've booked the all-inclusive tour and didn't regret a
-          single penny spent. I had a wonderful week in this sunny country.
-        </p>
-      </div>
-      <div>
-        <figure>
-          <img src="img/one-tour/georgeandtim.jpg" alt="George and Tim Photo" />
-          <figcaption>George and Tim, 30 y.o.</figcaption>
-        </figure>
-        <h3>We will come back!</h3>
-        <p>
-          Italy is something totally incredible. We loved the food, the
-          architecture, the bars and of course our yacht. We sailed with our
-          friends on a private vessel and that was really great, we felt like
-          billionaires.
-        </p>
-      </div>
-    </section>
+      </section>
+      <section class="where-we-start">
+        <h2>Where We Start</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.571287499887!2d14.767311377719098!3d40.673402781122306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bc2396154cdc3%3A0xc3702f48656f9d41!2zUGlhenphIGRlbGxhIENvbmNvcmRpYSwgODQxMjMgU2FsZXJubyBTQSwg0IbRgtCw0LvRltGP!5e0!3m2!1suk!2sus!4v1717846133426!5m2!1suk!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <section class="services-included-in-every-tariff">
+        <h2 class="services-included-in-every-tariff__title">
+          Services Included in Every Tariff
+        </h2>
+        <div>
+          <!--<img src="" alt="" />-->
+          <p>Yacht/Cabin Rental</p>
+        </div>
+        <div>
+          <!--<img src="" alt="" />-->
+          <p>Captain</p>
+        </div>
+        <div>
+          <!--<img src="" alt="" />-->
+          <p>Fuel</p>
+        </div>
+        <div>
+          <!--<img src="" alt="" />-->
+          <p>Excursions on the Route</p>
+        </div>
+        <div>
+          <!--<img src="" alt="" />-->
+          <p>Breakfast in Procida</p>
+        </div>
+        <div>
+          <!--<img src="" alt="" />-->
+          <p>WiFi</p>
+        </div>
+      </section>
+      <section class="additional-services">
+        <h2 class="additional-services__title">Additional Services</h2>
+        <div>
+          <!--<img src="" alt="" />-->
+          <p>Delicious Meals</p>
+        </div>
+        <div>
+          <!--<img src="" alt="" />-->
+          <p>Drinks</p>
+        </div>
+        <div>
+          <!--<img src="" alt="" />-->
+          <p>Diving Training</p>
+        </div>
+      </section>
+      <section class="what-our-guests-say">
+        <h2>What our guests say</h2>
+        <div>
+          <figure>
+            <img src="img/one-tour/alice.jpg" alt="Alice Photo" />
+            <figcaption>Alice, 23 y.0.</figcaption>
+          </figure>
+          <h3>Fascinating!</h3>
+          <p>
+            This was my first time visiting Italy, and it was incredible!
+            Everything that they say about this country, its food, wine and
+            people is true! Going there on a yacht was an even greater
+            experience!
+          </p>
+        </div>
+        <div>
+          <figure>
+            <img src="img/one-tour/john.jpg" alt="John Photo" />
+            <figcaption>John, 32 y.o.</figcaption>
+          </figure>
+          <h3>Te amo, Italy!</h3>
+          <p>
+            Thanks our Captain Jack and the whole crew for making this vacation
+            unforgettable! I've booked the all-inclusive tour and didn't regret
+            a single penny spent. I had a wonderful week in this sunny country.
+          </p>
+        </div>
+        <div>
+          <figure>
+            <img
+              src="img/one-tour/georgeandtim.jpg"
+              alt="George and Tim Photo"
+            />
+            <figcaption>George and Tim, 30 y.o.</figcaption>
+          </figure>
+          <h3>We will come back!</h3>
+          <p>
+            Italy is something totally incredible. We loved the food, the
+            architecture, the bars and of course our yacht. We sailed with our
+            friends on a private vessel and that was really great, we felt like
+            billionaires.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="footer.partial.html"
+      ></nav>
+    </footer>
   </body>
 </html>

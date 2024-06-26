@@ -6,21 +6,31 @@
     <title>Our Services Page</title>
   </head>
   <body>
-    <section>
-      <h2>Enjoy your trip!</h2>
-      <p>Get the most of your summer vacation sailing and partying on a luxury yacht</p>
-      <h2>Want to join us?</h2>
-      <p>
+    <section class="trip-introduction">
+      <h2 class="trip-title">Enjoy your trip!</h2>
+      <p class="trip-description">
+        Get the most of your summer vacation sailing and partying on a luxury
+        yacht
+      </p>
+    </section>
+    <section class="join-us-form">
+      <h2 class="form-title">Want to join us?</h2>
+      <p class="form-description">
         Complete the form below and sail with YachtSail Trips to the most
         spectacular places of the world!
       </p>
-      <form action="https://formspree.io/f/xdoqqnwa" method="post">
+      <form
+        action="https://formspree.io/f/xdoqqnwa"
+        method="post"
+        class="yacht-booking-form"
+      >
         <input
           type="text"
           id="ContactName"
           name="Name"
           placeholder="Name*"
           required
+          class="input-name"
         />
         <input
           type="tel"
@@ -28,6 +38,7 @@
           name="Phone"
           placeholder="Phone number*"
           required
+          class="input-phone"
         />
         <input
           type="email"
@@ -35,8 +46,9 @@
           name="Email"
           placeholder="E-mail*"
           required
+          class="input-email"
         />
-        <button type="submit">Send a Request</button>
+        <button type="submit" class="submit-button">Send a Request</button>
       </form>
     </section>
   </body>
