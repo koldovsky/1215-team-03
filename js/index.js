@@ -1,5 +1,5 @@
 function init() {
-  import("...");
+  import('...');
 }
 
 const totalPartials = document.querySelectorAll(
