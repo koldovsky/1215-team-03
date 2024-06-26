@@ -7,49 +7,66 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="shortcut icon" type="img/x-icon" href="./img/global/favicon.ico" />
     <script
-      src="https://kit.fontawesome.com/621e7291f0.js"
-      crossorigin="anonymous"
-    ></script>
+    src="https://unpkg.com/htmx.org@1.9.10"
+    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/621e7291f0.js"
+    crossorigin="anonymous"
+  ></script>
   </head>
-  <link rel="stylesheet" href="faq.css">
   <body>
     <main>
-        <section class="faq">
-            <h1>FAQ</h1>
-            <div class="faq-item">
-                <button class="faq-question">What items should we pack for your yachting trip?</button>
-                <div class="faq-answer">
-                    <p>It all depends on you and on the route you've chosen, Of course, there are some things that are a must no matter where you travel to, like, sunglasses and a passport. Every yacht is stocked with all the needed amenities, so forget about the hairdryer or shampoo. Just get your swimsuit, some warm clothes for windy evenings and comfortable shoes for going on excursions. Don't forget about your cell phone, roaming and chargers. If you have any diseases then definitely take all the prescribed meds with you. Anyway, we have the first aid kit on board.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">Is travel insurance a must?</button>
-                <div class="faq-answer">
-                    <p>Travel insurance is a good idea. This document is subject to the rules of your country. Still, if you want to dive, then you should have a valid DAN insurance, otherwise we will have to deny this service to you because of safety reasons. </p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">Can I leave the group and sail to the place I want?</button>
-                <div class="faq-answer">
-                    <p>Unfortunately, no. We have a thought-out route our captains follow. You cannot refuse the services of the captain during our journey and change the route, for your safety. Still, after the end of our trip you can stay at the last point and travel further on your own pace.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">I don't have a yachting experience at all, what should I do?</button>
-                <div class="faq-answer">
-                    <p>Don't worry, you don't have to be an experienced sailor to join our trips. Our crew can teach you dropping anchor and setting sail if you choose captain-only or captain+skipper option. If you don't want to learn sailing preferring sipping your cocktail, it's OK! Choose the All Inclusive option when booking and you won't lift a finger during the trip. </p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">Will I feel seasickness on the yacht?</button>
-                <div class="faq-answer">
-                    <p>According to statistics, 90% of people are prone to motion sickness. But we sail on yachts with special stabilization in water areas, and we don’t sail in bad weather - we stay in a port until the storm ends. Most people tolerate easy rolling, and taking tablets from motion sickness completely removes the discomfort. </p>
-                </div>
-            </div>
-        </section>
-      </main>
+      <header>
+        <nav
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="global.header-nav.partial.html"
+        ></nav>
+      </header>
+      <section class="faq">
+        <h1>FAQ</h1>
+        <div class="faq-item">
+          <button class="faq-question">What items should we pack for your yachting trip?</button>
+          <div class="faq-answer">
+            <p>It all depends on you and on the route you've chosen. Of course, there are some things that are a must no matter where you travel to, like, sunglasses and a passport. Every yacht is stocked with all the needed amenities, so forget about the hairdryer or shampoo. Just get your swimsuit, some warm clothes for windy evenings and comfortable shoes for going on excursions. Don't forget about your cell phone, roaming and chargers. If you have any diseases then definitely take all the prescribed meds with you. Anyway, we have the first aid kit on board.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Is travel insurance a must?</button>
+          <div class="faq-answer">
+            <p>Travel insurance is a good idea. This document is subject to the rules of your country. Still, if you want to dive, then you should have a valid DAN insurance, otherwise we will have to deny this service to you because of safety reasons.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Can I leave the group and sail to the place I want?</button>
+          <div class="faq-answer">
+            <p>Unfortunately, no. We have a thought-out route our captains follow. You cannot refuse the services of the captain during our journey and change the route, for your safety. Still, after the end of our trip you can stay at the last point and travel further on your own pace.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">I don't have a yachting experience at all, what should I do?</button>
+          <div class="faq-answer">
+            <p>Don't worry, you don't have to be an experienced sailor to join our trips. Our crew can teach you dropping anchor and setting sail if you choose captain-only or captain+skipper option. If you don't want to learn sailing preferring sipping your cocktail, it's OK! Choose the All Inclusive option when booking and you won't lift a finger during the trip.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Will I feel seasickness on the yacht?</button>
+          <div class="faq-answer">
+            <p>According to statistics, 90% of people are prone to motion sickness. But we sail on yachts with special stabilization in water areas, and we don’t sail in bad weather - we stay in a port until the storm ends. Most people tolerate easy rolling, and taking tablets from motion sickness completely removes the discomfort.</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
+      <section 
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="footer.partial.html"
+      ></section>
     </footer>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
-</html>
+
