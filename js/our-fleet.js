@@ -1,5 +1,6 @@
 function init() {
   import("./our-fleet.fleet-card.js");
+  import("./our-fleet-form.js");
 }
 
 const totalPartials = document.querySelectorAll(
