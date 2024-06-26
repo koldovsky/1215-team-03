@@ -1,13 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const menuToggle = document.getElementById('menu__toggle');
-    const navMenuWrapper = document.querySelector('.header__nav-menu-wrapper');
+function init() {
+    import('./index.header.js');
+  }
   
-    menuToggle.addEventListener('change', function() {
-      if (menuToggle.checked) {
-        navMenuWrapper.style.display = 'flex';
-      } else {
-        navMenuWrapper.style.display = 'none';
-      }
-    });
+  const totalPartials = document.querySelectorAll(
+    '[hx-trigger="load"], [data-hx-trigger="load"]'
+  ).length;
+  let loadedPartialsCount = 0;
+  
+  document.body.addEventListener("htmx:afterOnLoad", () => {
+    loadedPartialsCount++;
+    if (loadedPartialsCount === totalPartials) init();
   });
   
