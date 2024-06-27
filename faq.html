@@ -5,26 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="shortcut icon" type="img/x-icon" href="./img/global/favicon.ico" />
     <script
-    src="https://unpkg.com/htmx.org@1.9.10"
-    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://kit.fontawesome.com/621e7291f0.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/621e7291f0.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+  <header>
+    <nav
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.header-nav.partial.html"
+    ></nav>
+  </header>
   <body>
     <main>
-      <header>
-        <nav
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="global.header-nav.partial.html"
-        ></nav>
-      </header>
       <section class="faq">
         <h1>FAQ</h1>
         <div class="faq-item">
