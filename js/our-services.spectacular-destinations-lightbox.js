@@ -7,7 +7,9 @@ let currentIndex = 0;
 
 function updateLightbox(index) {
   const imageSrc = images[index].src;
+  const imageAlt = images[index].alt;
   lightboxImage.src = imageSrc;
+  lightboxImage.alt = imageAlt;
   currentIndex = index;
 
   prevButton.style.visibility = currentIndex === 0 ? "hidden" : "visible";
