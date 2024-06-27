@@ -1,5 +1,6 @@
 function init() {
-  import('./global.header.js');
+  import("./global.header.js");
+  import("./about-us_partners-carousel.js")
 }
 
 const totalPartials = document.querySelectorAll(

@@ -17,11 +17,14 @@
 
 .gallery-container {
   background-color: var(--bg-color-primary);
+  max-width: 1200px;
+  margin: auto;
 }
 
 .gallery-images {
   display: grid;
  gap: 5px;
+ padding-top: 50px;
 }
 
 

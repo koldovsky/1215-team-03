@@ -18,8 +18,8 @@
 
 .travels-container {
   background-color: var(--bg-color-primary);
-  width: 100%;
-  height: auto;
+  max-width: 1200px;
+  margin: auto;
   display: block;
 }
 
@@ -82,6 +82,7 @@ grid-template-columns: repeat(5, 1fr);
 
 .travels-container {
   background-image: url(../img/gallery-card/backgroundwhite.jpg);
+  
 }
         
 .button-container{
@@ -89,15 +90,29 @@ grid-template-columns: repeat(5, 1fr);
   justify-content: center;
   margin-top: 10px;
 }
-.travels-button {
-  bottom: 10px; 
-  left: 50%;
-  transform: translateX(-50%);
+
+
+.see-more-button {
+  display: inline-block;
   padding: 10px 20px;
-  background-color: var(--bg-color-primary);
+  font-size: 16px;
+  font-family: var(--font-family-secondary);
   color: var(--text-color-dark);
-  border-radius: 5px solid;
-  text-align: center;
+  background-color: var(--bg-color-primary);
+  border: 2px solid #ce9848;
+  border-radius: 50px;
   text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
+}
+
+.see-more-button:hover {
+  background-color: #ce9848;
+  border-color: #ce9848;
+}
+
+.see-more-button img {
+  vertical-align: middle;
+  margin-right: 10px;
 }
