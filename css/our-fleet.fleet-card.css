@@ -55,7 +55,7 @@
         .fleet-card__fleet-container-box__item {
           display: flex;
           flex-direction: column;
-          padding: 10px 0;
+          padding: 7px 0;
 
           .fleet-card__fleet-container-box__item-name {
             font-family: var(--font-family-third);
@@ -73,20 +73,22 @@
             line-height: 30px;
             letter-spacing: 1px;
             color: var(--text-color-medium-light);
+            text-shadow: 1px 3px 3px var(--border-color);
           }
           .rental-currency {
             width: 100%;
             padding: 2px;
-            max-width: 55px;
+            max-width: 57px;
             min-height: 20px;
-            border: 1px solid var(--border-color);
+            border: 2px solid var(--border-color);
             border-radius: 5px;
+            box-shadow: 1px 1px 2px var(--border-color);
             background-color: transparent;
             color: var(--text-color-medium-light);
 
             &:focus-visible {
               outline: none;
-              border: 1px solid var(--border-color);
+              border: 2px solid var(--border-color);
             }
           }
         }
