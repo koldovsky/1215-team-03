@@ -6,50 +6,64 @@
     <title>Our Services Page</title>
   </head>
   <body>
-    <section class="trip-introduction">
-      <h2 class="trip-title">Enjoy your trip!</h2>
-      <p class="trip-description">
-        Get the most of your summer vacation sailing and partying on a luxury
-        yacht
-      </p>
+    <section class="trip">
+      <div class="trip__content">
+        <h2 class="trip__title">Enjoy your trip!</h2>
+        <p class="trip__text">
+          Get the most of your summer vacation sailing and partying on a luxury
+          yacht
+        </p>
+      </div>
     </section>
-    <section class="join-us-form">
-      <h2 class="form-title">Want to join us?</h2>
-      <p class="form-description">
-        Complete the form below and sail with YachtSail Trips to the most
-        spectacular places of the world!
-      </p>
-      <form
-        action="https://formspree.io/f/xdoqqnwa"
-        method="post"
-        class="yacht-booking-form"
-      >
-        <input
-          type="text"
-          id="ContactName"
-          name="Name"
-          placeholder="Name*"
-          required
-          class="input-name"
-        />
-        <input
-          type="tel"
-          id="ContactPhoneNumber"
-          name="Phone"
-          placeholder="Phone number*"
-          required
-          class="input-phone"
-        />
-        <input
-          type="email"
-          id="ContactEmail"
-          name="Email"
-          placeholder="E-mail*"
-          required
-          class="input-email"
-        />
-        <button type="submit" class="submit-button">Send a Request</button>
-      </form>
+    <section class="our-services-contact-form">
+      <div class="our-services-contact-form__container">
+        <h2 class="our-services-contact-form__title">Want to join us?</h2>
+        <p class="our-services-contact-form__text">
+          Complete the form below and sail with YachtSail Trips to the most
+          spectacular places of the world!
+        </p>
+        <form
+          class="our-services-contact-form__area"
+          id="sail-form"
+          action="https://formspree.io/f/xdoqqnwa"
+          method="post"
+        >
+          <div class="our-services-contact-form__form-group">
+            <input
+              class="our-services-contact-form__input"
+              type="text"
+              placeholder="Name*"
+              name="client-name"
+            />
+            <div class="error-message">Name is required.</div>
+          </div>
+          <div class="our-services-contact-form__form-group">
+            <input
+              class="our-services-contact-form__input"
+              type="tel"
+              placeholder="Phone number*"
+              name="client-phone"
+            />
+            <div class="error-message">Phone number is required.</div>
+          </div>
+          <div class="our-services-contact-form__form-group">
+            <input
+              class="our-services-contact-form__input"
+              type="email"
+              placeholder="E-mail*"
+              name="client-email"
+            />
+            <div class="error-message">Valid email is required.</div>
+          </div>
+          <div class="our-services-contact-form__form-group">
+            <input
+              class="our-services-contact-form__input our-services-contact-form__submit"
+              type="submit"
+              value="Send a Request"
+            />
+          </div>
+        </form>
+      </div>
     </section>
   </body>
 </html>
