@@ -93,6 +93,7 @@
   color: var(--bg-color-primary);
   background-color: transparent;
   border-color: transparent;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
