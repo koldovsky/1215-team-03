@@ -34,7 +34,7 @@
   transition: transform 0.3s ease; 
 }
 .travels-img:hover {
-  transform: scale(2); /* Ефект збільшення */
+  transform: scale(2); 
 }
 
 
