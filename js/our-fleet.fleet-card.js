@@ -135,7 +135,7 @@ function renderCards(cards, rate = 1, selectedCurrency = "USD") {
                 <p class="fleet-card__fleet-container-box__item-name">Rent per day</p>
                 <p class="fleet-card__fleet-container-box__item-value">${(
                   card.rental * rate
-                ).toFixed(2)} </p>
+                ).toFixed(2)}
                 <select class="rental-currency">
                   <option value="USD" ${
                     selectedCurrency === "USD" ? "selected" : ""
@@ -155,7 +155,7 @@ function renderCards(cards, rate = 1, selectedCurrency = "USD") {
                   <option value="CAD" ${
                     selectedCurrency === "CAD" ? "selected" : ""
                   }>CAD</option>
-                </select>
+                </select> </p>
               </div>
               <div class="fleet-card__fleet-container-box__text-wrapper">
                 <p class="fleet-card__fleet-container-box__text">

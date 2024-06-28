@@ -1,3 +1,8 @@
+.main-gallery {
+  background-image: url(../img/gallery-card/backgroundwhite.jpg);
+  max-width: 1800px;
+}
+
 .travels-gallery {
   text-align: center;
   color: var(--text-color-dark);
@@ -9,7 +14,7 @@
 
 .travels-description {
   text-align: center;
-  color: rgb(81, 92, 109);
+  color: var(--text-color-dark);
   font-size: 16px;
   margin: 10px 10px;
   font-family: var(--font-family-secondary);
@@ -17,21 +22,51 @@
 }
 
 .travels-container {
-  background-color: var(--bg-color-primary);
   max-width: 1200px;
   margin: auto;
   display: block;
 }
 
 .travels-images {
- display: grid;
- gap: 5px;
+  display: grid;
+  gap: 20px;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+
+.see-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: var(--font-family-secondary);
+  color: var(--text-color-dark);
+  background-color: var(--bg-color-primary);
+  border: 2px solid var(--border-color);
+  border-radius: 50px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.see-more-button:hover {
+  background-color: var(--bg-color-secondary);
+  border-color: var(--hover-color-secondary);
+}
+
+.see-more-button img {
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 
 @media (min-width: 300px) {
   .travels-images {
-grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .travels-gallery {
@@ -45,7 +80,7 @@ grid-template-columns: 1fr;
 
 @media (min-width: 600px) {
   .travels-images {
-grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .travels-gallery {
@@ -55,9 +90,10 @@ grid-template-columns: 1fr 1fr;
   }
 
 }
+
 @media (min-width: 800px) {
   .travels-images {
-grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .travels-gallery {
@@ -67,9 +103,10 @@ grid-template-columns: repeat(5, 1fr);
   }
 
 }
+
 @media (min-width: 1200px) {
   .travels-images {
-grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .travels-gallery {
@@ -78,41 +115,4 @@ grid-template-columns: repeat(5, 1fr);
     font-size: 48px;
   }
 
-}
-
-.travels-container {
-  background-image: url(../img/gallery-card/backgroundwhite.jpg);
-  
-}
-        
-.button-container{
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-
-.see-more-button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-family: var(--font-family-secondary);
-  color: var(--text-color-dark);
-  background-color: var(--bg-color-primary);
-  border: 2px solid #ce9848;
-  border-radius: 50px;
-  text-decoration: none;
-  text-align: center;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-  cursor: pointer;
-}
-
-.see-more-button:hover {
-  background-color: #ce9848;
-  border-color: #ce9848;
-}
-
-.see-more-button img {
-  vertical-align: middle;
-  margin-right: 10px;
 }
