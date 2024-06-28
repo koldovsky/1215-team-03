@@ -7,11 +7,11 @@ const cards = [
     mainImg: "img/ourfleet-card/elan50_sailing_boat.webp",
     mainImgDescription: "White Elan 50 yacht sailing on open sea",
     details1: "Elan 50",
-    details2: "Capacity",
-    details3: "12 pax",
-    details4: "5+1",
-    details5: "75 HP",
-    details6: "2015",
+    details2: "12 pax",
+    details3: "5+1",
+    details4: "75 HP",
+    details5: "2015",
+    rental: "2400",
     features1: "- Air conditioning and heating",
     features2: "- multimedia center",
     features3: "- microwave and oven",
@@ -34,11 +34,11 @@ const cards = [
     mainImg: "img/ourfleet-card/laggon40_sailing_boat.webp",
     mainImgDescription: "Lagoon 40 yacht sailing near island",
     details1: "Lagoon 40",
-    details2: "Capacity",
-    details3: "12 pax",
-    details4: "4+2",
-    details5: "58 HP",
-    details6: "2019",
+    details2: "12 pax",
+    details3: "4+2",
+    details4: "58 HP",
+    details5: "2019",
+    rental: "2100",
     features1: "- GPS and WiFi on board",
     features2: "- multimedia center",
     features3: "- pleasant interior with many textile elements",
@@ -61,11 +61,11 @@ const cards = [
     mainImg: "img/ourfleet-card/laggon520_sailing_boat.webp",
     mainImgDescription: "Lagoon 520 yacht sailing near a sandy shore",
     details1: "Lagoon 520",
-    details2: "Capacity",
-    details3: "12 pax",
-    details4: "6",
-    details5: "150 HP",
-    details6: "2015",
+    details2: "12 pax",
+    details3: "6",
+    details4: "150 HP",
+    details5: "2015",
+    rental: "2300",
     features1: "- Air conditioning in every room",
     features2: "- multimedia center",
     features3: "- onboard WiFi internet access",
@@ -82,8 +82,8 @@ const cards = [
   },
 ];
 
-function renderCards(cards) {
-  let cardsHtml = " ";
+function renderCards(cards, rate = 1, selectedCurrency = "USD") {
+  let cardsHtml = "";
   for (const card of cards) {
     cardsHtml += `
     <article class="fleet-cards">
@@ -108,24 +108,54 @@ function renderCards(cards) {
                 </p>
               </div>
               <div class="fleet-card__fleet-container-box__item">
-                <p class="fleet-card__fleet-container-box__item-name">
-                   ${card.details2}
-                </p>
+                <p class="fleet-card__fleet-container-box__item-name">Capacity</p>
                 <p class="fleet-card__fleet-container-box__item-value">
-                   ${card.details3}
+                   ${card.details2}
                 </p>
               </div>
               <div class="fleet-card__fleet-container-box__item">
                 <p class="fleet-card__fleet-container-box__item-name">Cabins</p>
-                <p class="fleet-card__fleet-container-box__item-value"> ${card.details4}</p>
+                <p class="fleet-card__fleet-container-box__item-value"> ${
+                  card.details3
+                }</p>
               </div>
               <div class="fleet-card__fleet-container-box__item">
                 <p class="fleet-card__fleet-container-box__item-name">Engine</p>
-                <p class="fleet-card__fleet-container-box__item-value"> ${card.details5}</p>
+                <p class="fleet-card__fleet-container-box__item-value"> ${
+                  card.details4
+                }</p>
               </div>
               <div class="fleet-card__fleet-container-box__item">
                 <p class="fleet-card__fleet-container-box__item-name">Year</p>
-                <p class="fleet-card__fleet-container-box__item-value"> ${card.details6}</p>
+                <p class="fleet-card__fleet-container-box__item-value"> ${
+                  card.details5
+                }</p>
+              </div>
+              <div class="fleet-card__fleet-container-box__item">
+                <p class="fleet-card__fleet-container-box__item-name">Rent per day</p>
+                <p class="fleet-card__fleet-container-box__item-value">${(
+                  card.rental * rate
+                ).toFixed(2)}
+                <select class="rental-currency">
+                  <option value="USD" ${
+                    selectedCurrency === "USD" ? "selected" : ""
+                  }>USD</option>
+                  <option value="EUR" ${
+                    selectedCurrency === "EUR" ? "selected" : ""
+                  }>EUR</option>
+                  <option value="UAH" ${
+                    selectedCurrency === "UAH" ? "selected" : ""
+                  }>UAH</option>
+                  <option value="GBP" ${
+                    selectedCurrency === "GBP" ? "selected" : ""
+                  }>GBP</option>
+                  <option value="JPY" ${
+                    selectedCurrency === "JPY" ? "selected" : ""
+                  }>JPY</option>
+                  <option value="CAD" ${
+                    selectedCurrency === "CAD" ? "selected" : ""
+                  }>CAD</option>
+                </select> </p>
               </div>
               <div class="fleet-card__fleet-container-box__text-wrapper">
                 <p class="fleet-card__fleet-container-box__text">
@@ -186,5 +216,41 @@ function renderCards(cards) {
   }
   const cardContainer = document.querySelector(".fleet-cards__wrapper");
   cardContainer.innerHTML = cardsHtml;
+
+  const rentalCurrency = document.querySelectorAll(".rental-currency");
+  rentalCurrency.forEach(function (currency) {
+    currency.addEventListener("change", changeCurrency);
+  });
 }
-renderCards(cards);
+
+let currencies;
+
+async function currencyRates() {
+  if (!currencies) {
+    const response = await fetch(
+      "https://api.exchangerate-api.com/v4/latest/USD"
+    );
+    currencies = await response.json();
+  }
+}
+
+async function changeCurrency(event) {
+  const selectedCurrency = event.target.value;
+  await currencyRates();
+  const rate = currencies.rates[selectedCurrency];
+  renderCards(cards, rate, selectedCurrency);
+  localStorage.setItem("selectedCurrency", selectedCurrency);
+}
+
+async function initialize() {
+  const savedCurrency = localStorage.getItem("selectedCurrency");
+  await currencyRates();
+  if (savedCurrency && currencies.rates[savedCurrency]) {
+    const rate = currencies.rates[savedCurrency];
+    renderCards(cards, rate, savedCurrency);
+  } else {
+    renderCards(cards);
+  }
+}
+
+initialize();
