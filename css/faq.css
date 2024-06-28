@@ -4,13 +4,7 @@
 .main-content {
   background-color: var(--ui-light-accent-color);
 }
-body {
-    font-family: 'Georgia', serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-}
+
 
 
 .faq h1 {
