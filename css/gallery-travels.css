@@ -1,5 +1,6 @@
 .main-gallery {
   background-image: url(../img/gallery-card/backgroundwhite.jpg);
+  margin: auto;
   max-width: 1800px;
 }
 
@@ -30,6 +31,10 @@
 .travels-images {
   display: grid;
   gap: 20px;
+  transition: transform 0.3s ease; 
+}
+.travels-img:hover {
+  transform: scale(2); 
 }
 
 
