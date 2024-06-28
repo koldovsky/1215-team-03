@@ -46,7 +46,7 @@
 
 .sea-is-calling__block-with-image {
   padding: 34px 33px;
-  background-color: var(--ui-light-accent-color);
+  background-color: var(--bg-color-light);
   min-width: 230px;
   margin-top: 50px;
 }

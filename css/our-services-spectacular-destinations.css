@@ -19,7 +19,7 @@
 
 .destinations__title {
   font-family: var(--font-family-primary);
-  color: var(--text-color-light);
+  color: var(--bg-color-primary);
   font-size: 2.125rem; /*34px*/
   letter-spacing: 0.08925rem; /*1.428px*/
   line-height: 2.125rem; /*34px*/
@@ -28,7 +28,7 @@
 
 .destinations__subtitle {
   font-family: var(--font-family-secondary);
-  color: var(--ui-light-accent-color);
+  color: var(--bg-color-light);
   font-size: 1rem; /* 16px */
   letter-spacing: 0.056rem; /*0.896px*/
   font-weight: 500;
@@ -88,12 +88,11 @@
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
-.destinations__lightbox__btn-prev {
+.destinations__lightbox__btn-prev, .destinations__lightbox__btn-next {
   font-size: 1rem;
-}
-
-.destinations__lightbox__btn-next {
-  font-size: 1rem;
+  color: var(--bg-color-primary);
+  background-color: transparent;
+  border-color: transparent;
 }
 
 @media (min-width: 768px) {
@@ -108,11 +107,7 @@
     gap: 1rem;
   }
 
-  .destinations__lightbox__btn-prev {
-    font-size: 2rem;
-  }
-  
-  .destinations__lightbox__btn-next {
+  .destinations__lightbox__btn-prev, .destinations__lightbox__btn-next {
     font-size: 2rem;
   }
 }
