@@ -23,7 +23,8 @@
       font-size: 16px;
       line-height: 26px;
       letter-spacing: 0.8px;
-      margin-bottom: 30px;
+      color: var(--text-color-dark);
+      margin-bottom: 50px;
     }
 
     .fleet-card__fleet-container {
@@ -38,14 +39,6 @@
 
         &:nth-of-type(1) .fleet-card__fleet-container-img {
           object-position: 50% 80%;
-        }
-
-        &:nth-of-type(2) .fleet-card__fleet-container-img {
-          object-position: 50% 80%;
-        }
-
-        &:nth-of-type(3) .fleet-card__fleet-container-img {
-          object-position: 80% 80%;
         }
 
         .fleet-card__fleet-container-img {
@@ -172,6 +165,10 @@
           object-position: 50% 80%;
         }
 
+        &:nth-of-type(2) .fleet-card__fleet-container-imgbox__item {
+          object-position: 50% 0;
+        }
+
         &:nth-of-type(3) .fleet-card__fleet-container-imgbox__item {
           object-position: 50% 0;
         }
@@ -191,12 +188,37 @@
       }
     }
   }
+
+  &:nth-of-type(2) {
+    .fleet-card {
+      .fleet-card__fleet-container {
+        .fleet-card__fleet-container__img-wrapper {
+          .fleet-card__fleet-container-img {
+            object-position: 50% 70%;
+          }
+        }
+      }
+    }
+  }
+
+  &:nth-of-type(3) {
+    .fleet-card {
+      .fleet-card__fleet-container {
+        .fleet-card__fleet-container__img-wrapper {
+          .fleet-card__fleet-container-img {
+            object-position: 80% 80%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
   .fleet-cards {
     .fleet-card {
       .fleet-card__title {
+        margin-bottom: 50px;
         font-size: 41px;
       }
 
