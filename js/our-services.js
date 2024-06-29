@@ -1,6 +1,7 @@
 function init() {
   import("./global.header.js");
   import("./our-services.spectacular-destinations-lightbox.js");
+  import("./our-services.crew-services.js");
 }
 
 const totalPartials = document.querySelectorAll(
