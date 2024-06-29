@@ -1,39 +1,111 @@
-.hero {
+.hero__slider {
   position: relative;
   width: 100%;
-  height: 70vh;
-  background: linear-gradient(rgba(37, 54, 79, 0.8), rgba(37, 54, 79, 0.8)),
-    url("../img/our-fleet/our-fleet-hero-background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero__slide {
+  width: 100%;
+  height: 100%;
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
-  padding-top: 90px;
-  padding-bottom: 70px;
-  font-family:var(--font-family-secondary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s linear;
+}
+
+.hero__slide:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(37, 54, 79, 0.8), rgba(37, 54, 79, 0.8));
+  z-index: 2;
+}
+
+.hero__slide1 {
+  background-image: url(../img/our-fleet/our-fleet-hero-background.jpg);
+}
+
+.hero__slide2 {
+  background-image: url(../img/ourfleet-card/elan50_on_waves.webp);
+}
+
+.hero__slide3 {
+  background-image: url(../img/ourfleet-card/elan50_sailing_boat.webp);
+}
+
+.hero__slide4 {
+  background-image: url(../img/ourfleet-card/laggon40_dining_table.webp);
+}
+
+.hero__slide5 {
+  background-image: url(../img/ourfleet-card/laggon40_port.webp);
+}
+
+.hero__slide6 {
+  background-image: url(../img/ourfleet-card/laggon40_recreation_room.webp);
+}
+
+.hero__slide7 {
+  background-image: url(../img/ourfleet-card/laggon520_bow_yacht.webp);
+}
+
+.hero__slide-prev,
+.hero__slide-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--text-color-light);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 2;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+  }
+}
+
+.hero__slide-prev {
+  left: 10px;
+}
+
+.hero__slide-next {
+  right: 10px;
 }
 
 .hero__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-color-light);
   text-align: center;
   max-width: 800px;
-  padding: 0 15px;
-
+  z-index: 2;
 }
 
 .hero__title,
 .hero__text {
+  margin: 0;
   letter-spacing: 1px;
+
+  @media (min-width: 768px) {
+    padding: 10px;
+  }
 }
 
 .hero__title {
   font-size: 34px;
   margin: 25px 0;
-  
-  @media(min-width: 768px) {
+
+  @media (min-width: 768px) {
     font-size: 48px;
   }
 }
@@ -42,8 +114,7 @@
   font-size: 14px;
   line-height: 1.8;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     font-size: 15px;
-
   }
 }
