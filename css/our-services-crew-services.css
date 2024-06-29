@@ -64,20 +64,30 @@
 
 .crew-services__next-option,
 .crew-services__prev-option {
-    height: 50px;
-    max-width: 30px;
-    border: none;
-    background-color: white;
+  height: 50px;
+  max-width: 30px;
+  border: none;
+  background-color: white;
 }
 
 .crew-services__carousel-buttons {
-  display:flex;
-  flex-direction:row;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  background-color: white;
+  max-height: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 765px) {
   .crew-services__options {
     flex-wrap: wrap;
   }
 }
+
+@media (min-width: 1080px) {
+   .crew-services__next-option,
+  .crew-services__prev-option {
+    display: none;
+  }
+}
+

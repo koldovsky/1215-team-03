@@ -18,7 +18,7 @@ const crewSlides = [
       src="img/our-services/our-service_captain-skipper.webp"
       alt="Captain and skipper"
     />
-    <p class="crew-services__subtitle">Captain & Skipper Included</p>
+    <p class="crew-services__subtitle">Captain & Skipper</p>
     <p class="crew-services__description">
       Skipper and captain will take care of everything connected with the yacht.
       Docking, sailing, knots tying - you don't need to think about it. Just
@@ -46,10 +46,10 @@ function renderCrewServicesSlide() {
   const slideContainer = document.querySelector(".crew-services__options");
   slideContainer.innerHTML = "";
 
-  if (window.matchMedia("(max-width: 767px)").matches) {
+  if (window.matchMedia("(max-width: 765px)").matches) {
     slideContainer.innerHTML = crewSlides[curInd];
   } else if (
-    window.matchMedia("(min-width: 768px) and (max-width: 1079px)").matches
+    window.matchMedia("(min-width: 766px) and (max-width: 1079px)").matches
   ) {
     const secondSlideIdx = curInd + 1 >= crewSlides.length ? 0 : curInd + 1;
     slideContainer.innerHTML = crewSlides[curInd] + crewSlides[secondSlideIdx];
