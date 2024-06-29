@@ -68,12 +68,28 @@
   max-width: 30px;
   border: none;
   background-color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.crew-services__radio{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border-color: var(--text-color-dark);
+  box-sizing: calc();
+  background-color: var(--text-color-dark);
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+  margin-top: 7.5px;
+  cursor: pointer;
 }
 
 .crew-services__carousel-buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  /* justify-items: baseline; */
   background-color: white;
   max-height: 30px;
 }
@@ -85,8 +101,9 @@
 }
 
 @media (min-width: 1080px) {
-   .crew-services__next-option,
-  .crew-services__prev-option {
+  .crew-services__next-option,
+  .crew-services__prev-option,
+  .crew-services__radio {
     display: none;
   }
 }
