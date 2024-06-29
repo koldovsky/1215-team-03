@@ -15,9 +15,9 @@
 .sea-is-calling__title {
   font-family: var(--font-family-primary);
   color: var(--text-color-dark);
-  font-size: 2.125rem; /*34px*/
-  letter-spacing: 0.08925rem; /*1.428px*/
-  line-height: 2.125rem; /*34px*/
+  font-size: 2.125rem;
+  letter-spacing: 0.08925rem;
+  line-height: 2.125rem;
   text-align: center;
 }
 
@@ -29,16 +29,16 @@
 .sea-is-calling__subtitle {
   font-family: var(--font-family-primary);
   color: var(--text-color-dark);
-  font-size: 1.5rem; /* 24px */
-  letter-spacing: 0.061875rem; /*0.99px*/
+  font-size: 1.5rem;
+  letter-spacing: 0.061875rem;
   text-align: left;
 }
 
 .sea-is-calling__description {
   font-family: var(--font-family-secondary);
   color: var(--text-color-medium);
-  font-size: 0.94rem; /* 15px */
-  letter-spacing: 0.03rem; /* 0.465px */
+  font-size: 0.94rem;
+  letter-spacing: 0.03rem;
   min-width: 270px;
   line-height: 1.8rem;
   overflow-wrap: break-word;
@@ -46,7 +46,7 @@
 
 .sea-is-calling__block-with-image {
   padding: 34px 33px;
-  background-color: var(--ui-light-accent-color);
+  background-color: var(--bg-color-light);
   min-width: 230px;
   margin-top: 50px;
 }
@@ -69,7 +69,7 @@
   }
 
   .sea-is-calling__title {
-    font-size: 2.56rem; /*41px*/
+    font-size: 2.56rem;
   }
 
   .sea-is-calling__content {
@@ -78,6 +78,6 @@
 }
 @media(min-width:992px) {
   .sea-is-calling__title {
-    font-size: 3rem; /*48px*/
+    font-size: 3rem;
     }
 }

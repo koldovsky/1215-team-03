@@ -37,3 +37,5 @@ Team:
 -Tetiana Kopot
 -Anistrat Serhii
 -Yuskiv Yana
+-Moroz Eduard
+

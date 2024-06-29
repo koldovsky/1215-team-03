@@ -23,7 +23,8 @@
       font-size: 16px;
       line-height: 26px;
       letter-spacing: 0.8px;
-      margin-bottom: 30px;
+      color: var(--text-color-dark);
+      margin-bottom: 50px;
     }
 
     .fleet-card__fleet-container {
@@ -35,6 +36,10 @@
         max-width: 717px;
         aspect-ratio: 1 / 0.85;
         overflow: hidden;
+
+        &:nth-of-type(1) .fleet-card__fleet-container-img {
+          object-position: 50% 80%;
+        }
 
         .fleet-card__fleet-container-img {
           width: 100%;
@@ -49,13 +54,25 @@
           }
         }
       }
+
       .fleet-card__fleet-container-box {
         margin: 50px 0;
 
         .fleet-card__fleet-container-box__item {
           display: flex;
           flex-direction: column;
-          padding: 10px 0;
+          padding: 7px 0;
+
+          &:nth-of-type(6) {
+            .fleet-card__fleet-container-box__item-value {
+              width: 100%;
+              max-width: 180px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+            }
+          }
 
           .fleet-card__fleet-container-box__item-name {
             font-family: var(--font-family-third);
@@ -63,7 +80,7 @@
             font-size: 18px;
             line-height: 30px;
             letter-spacing: 1px;
-            padding: 0 0 10px;
+            padding: 0 0 5px;
           }
 
           .fleet-card__fleet-container-box__item-value {
@@ -73,6 +90,29 @@
             line-height: 30px;
             letter-spacing: 1px;
             color: var(--text-color-medium-light);
+            padding: 0 0 5px;
+          }
+          .rental-currency {
+            width: 100%;
+            padding: 2px;
+            max-width: 57px;
+            min-height: 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 5px;
+            box-shadow: 2px 3px 3px var(--border-color);
+            background-color: transparent;
+            color: var(--text-color-medium-light);
+            transition: 0.3s;
+
+            &:focus-visible {
+              outline: none;
+              border: 2px solid var(--border-color);
+            }
+
+            &:hover {
+              transition: 0.3s;
+              box-shadow: none;
+            }
           }
         }
 
@@ -121,6 +161,14 @@
         aspect-ratio: 1 / 0.85;
         overflow: hidden;
 
+        &:nth-of-type(1) .fleet-card__fleet-container-imgbox__item {
+          object-position: 50% 80%;
+        }
+
+        &:nth-of-type(2) .fleet-card__fleet-container-imgbox__item {
+          object-position: 50% 0;
+        }
+
         &:nth-of-type(3) .fleet-card__fleet-container-imgbox__item {
           object-position: 50% 0;
         }
@@ -140,12 +188,37 @@
       }
     }
   }
+
+  &:nth-of-type(2) {
+    .fleet-card {
+      .fleet-card__fleet-container {
+        .fleet-card__fleet-container__img-wrapper {
+          .fleet-card__fleet-container-img {
+            object-position: 50% 70%;
+          }
+        }
+      }
+    }
+  }
+
+  &:nth-of-type(3) {
+    .fleet-card {
+      .fleet-card__fleet-container {
+        .fleet-card__fleet-container__img-wrapper {
+          .fleet-card__fleet-container-img {
+            object-position: 80% 80%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
   .fleet-cards {
     .fleet-card {
       .fleet-card__title {
+        margin-bottom: 50px;
         font-size: 41px;
       }
 
@@ -164,9 +237,13 @@
             padding: 2px 5px;
 
             .fleet-card__fleet-container-box__item-name {
-              min-width: 50%;
+              min-width: 45%;
               margin-left: 20px;
               padding-top: 5px;
+            }
+            .fleet-card__fleet-container-box__item-value {
+              width: 100%;
+              max-width: 120px;
             }
           }
 
@@ -183,6 +260,7 @@
       .fleet-card__fleet-container-imgbox {
         flex-wrap: nowrap;
         justify-content: center;
+
         .fleet-card__fleet-container-imgbox__wrapper {
           min-width: 33.33%;
         }

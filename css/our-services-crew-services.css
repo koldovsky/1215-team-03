@@ -62,6 +62,20 @@
   text-align: center;
 }
 
+.crew-services__next-option,
+.crew-services__prev-option {
+    height: 50px;
+    max-width: 30px;
+    border: none;
+    background-color: white;
+}
+
+.crew-services__carousel-buttons {
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .crew-services__options {
     flex-wrap: wrap;
