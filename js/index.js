@@ -1,5 +1,6 @@
 function init() {
   import('./global.header.js');
+  import('./index.contacts.js')
 }
 
 const totalPartials = document.querySelectorAll(
