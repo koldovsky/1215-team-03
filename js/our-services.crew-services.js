@@ -58,6 +58,35 @@ function renderCrewServicesSlide() {
       slideContainer.innerHTML += crewSlides[i];
     }
   }
+  renderIndicators();
+}
+
+function renderIndicators() {
+  let indicatorsHtml = "";
+  for (let i = 0; i < crewSlides.length; i++) {
+    if (i === curInd) {
+      indicatorsHtml += ' <btn class="crew-services__radio-active"></btn>';
+    } else {
+      indicatorsHtml += '<btn class="crew-services__radio"></btn>';
+    }
+  }
+  const indicatorsContainer = document.querySelector(
+    ".crew-services__radio-buttons"
+  );
+  indicatorsContainer.innerHTML = indicatorsHtml;
+  addIndicatorsEventListeners();
+}
+
+function addIndicatorsEventListeners() {
+  const indicators = document.querySelectorAll(
+    ".crew-services__radio-buttons .crew-services__radio"
+  );
+  indicators.forEach((indicator, idx) => {
+    indicator.addEventListener("click", () => {
+      curInd = idx;
+      renderCrewServicesSlide();
+    });
+  });
 }
 
 function nextCrewServicesSlide() {
