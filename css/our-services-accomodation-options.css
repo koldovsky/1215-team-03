@@ -1,8 +1,8 @@
 .body-accomodation-options {
-    font-family: inherit;
     background-color: #f1eed9;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: var(--font-family-secondary);
 }
 
 .container-accomodation {
