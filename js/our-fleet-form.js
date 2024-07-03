@@ -50,16 +50,18 @@ form.addEventListener('submit', async function (event) {
         console.log('Success:', response)
         form.reset()
         setTimeout(() => {
-          submitBtn.classList.remove('submitted')
-          submitBtn.value = 'Send a Request'
+          resetButton()
         }, 2000)
       } else {
         console.error('Error:', response)
-        submitBtn.classList.remove('submitted')
-        submitBtn.value = 'Send a Request'
+        resetButton()
       }
     } catch (error) {
       console.error('Error:', error)
+      resetButton()
+    }
+
+    function resetButton() {
       submitBtn.classList.remove('submitted')
       submitBtn.value = 'Send a Request'
     }
