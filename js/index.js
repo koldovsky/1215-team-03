@@ -1,5 +1,7 @@
 function init() {
-  import('./global.header.js');
+  import("./global.header.js");
+  import("./index.header-text.js");
+  import("./index.contacts.js");
 }
 
 const totalPartials = document.querySelectorAll(

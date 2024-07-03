@@ -18,73 +18,62 @@
   </head>
   <body>
     <header>
-      <nav class="header__nav">
-        <div class="cotainer">
-          <section class="header__nav-top">
-            <div class="header__phone">
-              <a href="tel:+1-234-567-8900">+1-234-567-8900</a>
-            </div>
-            <div class="header__social-icons">
-              <a href="https://x.com/">
-                <img src="./img/header/twitter.svg" alt="Twitter" />
-              </a>
-
-              <a href="https://www.youtube.com/">
-                <img src="./img/header/youtube.svg" alt="You Tube" />
-              </a>
-
-              <a href="https://www.instagram.com/">
-                <img src="./img/header/instagram.svg" alt="Instagram" />
-              </a>
-            </div>
-          </section>
-          <section class="header__hero-nav">
-            <div class="header__web-site-logo">
-              <a href="index.html">
-                <img
-                  src="./img/header/site-logo.svg"
-                  alt="Web Site Logo"
-                  width="125px"
-                />
-              </a>
-            </div>
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-              <span></span>
-            </label>
-            <div class="header__nav-menu-wrapper">
-              <ul class="header__nav-menu">
-                <li>
-                  <a class="menu__item" href="destinations.html"
-                    >Destinations</a
-                  >
-                </li>
-                <li>
-                  <a class="menu__item" href="our-services.html"
-                    >Our services</a
-                  >
-                </li>
-                <li>
-                  <a class="menu__item" href="our-fleet.html">Our fleet</a>
-                </li>
-                <li><a class="menu__item" href="gallery.html">Gallery</a></li>
-                <li><a class="menu__item" href="faq.html">FAQ</a></li>
-                <li>
-                  <a class="menu__item" href="about-us.html">About us</a>
-                </li>
-                <li>
-                  <a class="menu__item" href="contacts.html">Contacts</a>
-                </li>
-                <li class="header__button__send-a-request">
-                  <a class="menu__item" href="contacts.html" type="button"
-                    >Send a Request</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </section>
+      <section class="header__nav-top">
+        <div class="header__phone">
+          <a href="tel:+1-234-567-8900">+1-234-567-8900</a>
         </div>
-      </nav>
+        <div class="header__social-icons">
+          <a class="header__social-link" href="https://x.com/SoftServeInc"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a
+            class="header__social-link"
+            href="https://www.youtube.com/@programmingmentorua"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a
+            class="header__social-link"
+            href="https://www.instagram.com/softserve_people/"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+        </div>
+      </section>
+      <section class="header__hero-nav">
+        <a href="index.html" class="logo">
+          <img src="./img/header/site-logo.svg" alt="Web Site Logo" />
+        </a>
+        <button class="menu__btn" id="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="header__menu">
+          <ul class="header__nav-menu">
+            <li>
+              <a class="menu__item" href="destinations.html">Destinations</a>
+            </li>
+            <li>
+              <a class="menu__item" href="our-services.html">Our services</a>
+            </li>
+            <li>
+              <a class="menu__item" href="our-fleet.html">Our fleet</a>
+            </li>
+            <li><a class="menu__item" href="gallery.html">Gallery</a></li>
+            <li><a class="menu__item" href="faq.html">FAQ</a></li>
+            <li>
+              <a class="menu__item" href="about-us.html">About us</a>
+            </li>
+            <li>
+              <a class="menu__item" href="contacts.html">Contacts</a>
+            </li>
+            <li class="header__button__send-a-request">
+              <a class="menu__item" href="contacts.html" type="button"
+                >Send a Request</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
     </header>
   </body>
 </html>

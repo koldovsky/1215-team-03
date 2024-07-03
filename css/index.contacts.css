@@ -1,14 +1,14 @@
 @import "global.css";
 
 .contacts__section {
-  background-image: url(../img/index-contacts/contacts-map.jpeg);
+  background-image: url(../img/index-contacts/contacts-map.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 55% 25%;
 }
 .contacts__section-container-wrapper {
-  background: linear-gradient(0deg, #25364a 0%, rgba(37, 54, 74, 0.8) 100%);
+  background: linear-gradient(0deg, #25364a 0%, rgba(37, 54, 74, 0.8) 120%);
 }
 .contacts__section-container {
   display: flex;

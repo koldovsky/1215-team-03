@@ -11,9 +11,9 @@
 .crew-services__title-content {
   font-family: var(--font-family-primary);
   color: var(--text-color-dark);
-  font-size: 2.125rem; /*34px*/
-  letter-spacing: 0.08925rem; /*1.428px*/
-  line-height: 2.125rem; /*34px*/
+  font-size: 2.125rem;
+  letter-spacing: 0.08925rem;
+  line-height: 2.125rem;
   text-align: center;
 }
 
@@ -45,16 +45,16 @@
 .crew-services__subtitle {
   font-family: var(--font-family-primary);
   color: var(--text-color-dark);
-  font-size: 1.5rem; /* 24px */
-  letter-spacing: 0.061875rem; /*0.99px*/
+  font-size: 1.5rem;
+  letter-spacing: 0.061875rem;
   text-align: center;
 }
 
 .crew-services__description {
   font-family: var(--font-family-secondary);
   color: var(--text-color-medium);
-  font-size: 0.94rem; /* 15px */
-  letter-spacing: 0.03rem; /* 0.465px */
+  font-size: 0.94rem;
+  letter-spacing: 0.03rem;
   min-width: 270px;
   line-height: 1.8rem;
   overflow-wrap: break-word;
@@ -72,13 +72,24 @@
   margin-right: 5px;
 }
 
-.crew-services__radio{
+.crew-services__radio {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  border-color: var(--text-color-dark);
   box-sizing: calc();
   background-color: var(--text-color-dark);
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+  margin-top: 7.5px;
+  cursor: pointer;
+}
+
+.crew-services__radio-active {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  box-sizing: calc();
+  background-color: rgb(164, 158, 158);
   margin-right: 2.5px;
   margin-left: 2.5px;
   margin-top: 7.5px;
@@ -89,7 +100,14 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* justify-items: baseline; */
+  background-color: white;
+  max-height: 30px;
+}
+
+.crew-services__radio-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-color: white;
   max-height: 30px;
 }
@@ -103,8 +121,8 @@
 @media (min-width: 1080px) {
   .crew-services__next-option,
   .crew-services__prev-option,
+  .crew-services__radio-active,
   .crew-services__radio {
     display: none;
   }
 }
-

@@ -45,7 +45,7 @@ const cards = [
     features4: "- fridge and mini-bar",
     features5: "- fully-equipped kitchen",
     features6: "- spacious sunbathing area",
-    features7: "- individual cabins for captain and skipperg",
+    features7: "- individual cabins for captain and skipper",
     additionalImg1: "img/ourfleet-card/laggon40_port.webp",
     addImgDescription1: "Lagoon 40 yacht in the port",
     additionalImg2: "img/ourfleet-card/laggon40_dining_table.webp",
@@ -82,9 +82,11 @@ const cards = [
   },
 ];
 
-function renderCards(cards, rate = 1, selectedCurrency = "USD") {
+function renderCards(cards, rates = {}, selectedCurrencies = {}) {
   let cardsHtml = "";
   for (const card of cards) {
+    const selectedCurrency = selectedCurrencies[card.id] || "USD";
+    const rate = rates[selectedCurrency] || 1;
     cardsHtml += `
     <article class="fleet-cards">
         <div class="fleet-card container">
@@ -136,7 +138,7 @@ function renderCards(cards, rate = 1, selectedCurrency = "USD") {
                 <p class="fleet-card__fleet-container-box__item-value">${(
                   card.rental * rate
                 ).toFixed(2)}
-                <select class="rental-currency">
+                <select class="rental-currency" data-id="${card.id}">
                   <option value="USD" ${
                     selectedCurrency === "USD" ? "selected" : ""
                   }>USD</option>
@@ -235,22 +237,25 @@ async function currencyRates() {
 }
 
 async function changeCurrency(event) {
+  const cardId = event.target.getAttribute("data-id");
   const selectedCurrency = event.target.value;
   await currencyRates();
   const rate = currencies.rates[selectedCurrency];
-  renderCards(cards, rate, selectedCurrency);
-  localStorage.setItem("selectedCurrency", selectedCurrency);
+  const selectedCurrencies =
+    JSON.parse(localStorage.getItem("selectedCurrencies")) || {};
+  selectedCurrencies[cardId] = selectedCurrency;
+  localStorage.setItem(
+    "selectedCurrencies",
+    JSON.stringify(selectedCurrencies)
+  );
+  renderCards(cards, currencies.rates, selectedCurrencies);
 }
 
 async function initialize() {
-  const savedCurrency = localStorage.getItem("selectedCurrency");
+  const savedCurrencies =
+    JSON.parse(localStorage.getItem("selectedCurrencies")) || {};
   await currencyRates();
-  if (savedCurrency && currencies.rates[savedCurrency]) {
-    const rate = currencies.rates[savedCurrency];
-    renderCards(cards, rate, savedCurrency);
-  } else {
-    renderCards(cards);
-  }
+  renderCards(cards, currencies.rates, savedCurrencies);
 }
 
 initialize();

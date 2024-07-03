@@ -1,10 +1,5 @@
-const menuToggle = document.getElementById("menu__toggle");
-const navMenuWrapper = document.querySelector(".header__nav-menu-wrapper");
-
-menuToggle.addEventListener("change", function () {
-  if (menuToggle.checked) {
-    navMenuWrapper.style.display = "flex";
-  } else {
-    navMenuWrapper.style.display = "none";
-  }
+document.getElementById("burger-menu").addEventListener("click", function () {
+  document.querySelector(".header__hero-nav").classList.toggle("open");
+  document.documentElement.classList.toggle("no-scroll");
+  document.body.classList.toggle("no-scroll");
 });
