@@ -119,7 +119,7 @@
   }
 }
 
-.contacts__form {
+.contacts__form-index {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -185,7 +185,7 @@
     width: 50%;
     align-self: stretch;
   }
-  .contacts__form {
+  .contacts__form-index {
     padding: 52px 55px;
     width: 50%;
     align-self: stretch;
@@ -198,7 +198,7 @@
   .contacts__subtitle {
     font-size: 1.5rem;
   }
-  .contacts__form {
+  .contacts__form-index {
     padding: 70px 75px;
   }
 }
