@@ -1,5 +1,6 @@
 @import "global.css";
 
+
 .contacts__info {
   display: flex;
   flex-direction: column;
@@ -111,6 +112,9 @@
     outline-color: var(--input-focus-color-primary);
   }
   .contacts__submit {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 34px;
     margin-top: 56px;
     background-color: var(--bg-color-dark);
     color: var(--text-color-light);
@@ -157,13 +161,4 @@
   .contacts__form {
     padding: 70px 100px;
   }
-}
-
-.error {
-  color: red;
-  font-size: 0.9em;
-}
-
-.contacts__input--error {
-  border-color: red;
 }
