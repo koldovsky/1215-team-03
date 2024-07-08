@@ -3,6 +3,11 @@ function init() {
   import("./our-services.spectacular-destinations-lightbox.js");
   import("./our-services.accomodation-options.js");
   import("./our-services.crew-services.js");
+  if (typeof fetchAccommodations === "function") {
+    fetchAccommodations();
+} else {
+    console.error("Function fetchAccommodations is not defined.");
+}
 }
 
 const totalPartials = document.querySelectorAll(
