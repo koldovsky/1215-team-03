@@ -1,13 +1,10 @@
 function init() {
   import("./global.header.js");
   import("./our-services.spectacular-destinations-lightbox.js");
-  import("./our-services.accomodation-options.js");
+  import("./our-services.accomodation-options.js").then(module => {
+    module.fetchAccommodations();
+});
   import("./our-services.crew-services.js");
-  if (typeof fetchAccommodations === "function") {
-    fetchAccommodations();
-} else {
-    console.error("Function fetchAccommodations is not defined.");
-}
 }
 
 const totalPartials = document.querySelectorAll(
