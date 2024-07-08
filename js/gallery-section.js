@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     const images = document.querySelectorAll('.gallery-img img');
 

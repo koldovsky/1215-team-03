@@ -1,3 +1,4 @@
+
 .gallery-title {
   text-align: center;
   font-size: 48px;
@@ -5,6 +6,28 @@
   padding: 5px;
   font-family: var(--contacts-font-playfair);
   color: var(--text-color-primary);
+}
+
+
+.gallery-title, .gallery-description {
+  opacity: 0;
+  animation: fadeIn 3s forwards, changeColor 5s 5s forwards;
+  color: var(--input-focus-color-primary);
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes changeColor {
+  from {
+      color: var(--input-focus-color-primary);
+  }
+  to {
+    color: var(--text-color-primary);
+  }
 }
 
 .gallery-description {
@@ -25,8 +48,9 @@
   display: grid;
   gap: 20px;
   padding-top: 50px;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
+
 .gallery-img:hover {
   transform: scale(1.5);
 }
