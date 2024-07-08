@@ -208,3 +208,8 @@
   background-color: var(--text-color-light);
   color: var(--icon-background);
 }
+
+.destination {
+  opacity: 0; 
+  transition: opacity 2s ease-in-out; 
+}
