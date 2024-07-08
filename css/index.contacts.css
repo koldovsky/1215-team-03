@@ -152,6 +152,9 @@
     margin-bottom: 0;
   }
   .contacts__submit {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 34px;
     margin-top: 56px;
     background-color: var(--bg-color-secondary);
     color: var(--text-color-light);

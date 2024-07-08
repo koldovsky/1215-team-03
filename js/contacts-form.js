@@ -2,7 +2,6 @@ const form = document.getElementById("contacts-form");
 
 async function handleSubmit(event) {
     event.preventDefault();
-    const status = document.getElementById("contacts-form-status");
     const toastLiveInfo = document.getElementById('liveToast-form');
     const toastBody = document.querySelector('.toast-body-form');
     const toastTitle = document.querySelector('.toast-title-form');
