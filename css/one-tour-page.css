@@ -528,7 +528,7 @@
   margin: 10px;
 }
 
-.contacts__background {
+.one-tour-contact__part {
   background: linear-gradient(rgba(44, 59, 78, 0.9), rgba(44, 59, 78, 0.9)),
     url(../img/one-tour/bottom.jpg);
   background-size: cover;
@@ -538,24 +538,23 @@
   align-items: center;
   justify-content: center;
   margin: auto;
-  padding: 50px;
+  padding: 30px;
 }
 
-.contacts__form {
+.one-tour-contacts {
   background-color: var(--bg-color-primary);
   display: flex;
   flex: 0.5;
   flex-direction: column;
-  min-height: 400px;
+  min-height: 350px;
   min-width: 200px;
   max-width: 570px;
   align-items: center;
   justify-content: center;
   padding: 10px 40px;
-  margin: auto;
 }
 
-.contacts__title {
+.one-tour-contacts__title {
   display: flex;
   margin: auto;
   font-weight: bold;
@@ -568,7 +567,7 @@
   letter-spacing: 3px;
 }
 
-.contacts__text {
+.one-tour-contacts__text {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -579,13 +578,13 @@
   margin: 5px;
 }
 
-.contacts__input-fields {
+.one-tour-contacts__input-fields {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.contacts__input {
+.one-tour-contacts__input {
   margin-bottom: 24px;
   font-family: var(--font-family-secondary);
   font-size: 0.875rem;
@@ -596,12 +595,12 @@
   border-radius: 34px;
 }
 
-.contacts__input:focus {
+.one-tour-contacts__input:focus {
   outline: auto;
   outline-color: var(--input-focus-color-primary);
 }
 
-.contacts__submit {
+.one-tour-contacts__submit {
   margin-top: 56px;
   background-color: var(--bg-color-dark);
   color: var(--text-color-light);
@@ -609,10 +608,13 @@
   font-size: 0.875rem;
   font-weight: 700;
   transition: all 0.2s ease-in-out;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 34px;
 }
 
-.accomodation {
-  margin-top: 24px;
+.one-tour-accomodation {
+  margin-top: 6px;
   font-family: var(--font-family-secondary);
   font-size: 0.875rem;
   font-weight: 400;
@@ -625,12 +627,6 @@
   -moz-appearance: none;
 }
 
-.contacts__submit {
-  border: none;
-  padding: 12px 24px;
-  border-radius: 34px;
-}
-
-.contacts__submit:hover {
+.one-tour-contacts__submit:hover {
   background-color: var(--bg-color-secondary);
 }
