@@ -468,50 +468,53 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="contacts__background">
+      <section class="one-tour-contact__part">
+        <div class="one-tour-contacts">
           <form
             id="contact-form"
-            class="contacts__form"
             action="https://formspree.io/f/xrbzgopb"
             method="post"
           >
-            <h3 class="contacts__title">Want to Join Us?</h3>
-            <p class="contacts__text">
+            <h3 class="one-tour-contacts__title">Want to Join Us?</h3>
+            <p class="one-tour-contacts__text">
               Fill out the form and we will contact you soon to clear all the
               details and book a tour for you
             </p>
-            <div class="contacts__input-fields">
+            <div class="one-tour-contacts__input-fields">
               <input
-                class="contacts__input"
+                class="one-tour-contacts__input"
                 type="text"
                 name="name"
                 placeholder="Name*"
                 required
               />
               <input
-                class="contacts__input"
+                class="one-tour-contacts__input"
                 type="tel"
                 name="phone"
                 placeholder="Phone number*"
                 required
               />
               <input
-                class="contacts__input"
+                class="one-tour-contacts__input"
                 type="email"
                 name="email"
                 placeholder="E-mail*"
                 required
               />
-              <select class="accomodation">
-                <option value="" disabled selected aria-required="true">
+              <select class="one-tour-accomodation" name="accommodation">
+                <option value="" selected aria-required="true">
                   Choose the accommodation*
                 </option>
-                <option class="variant__option" value="cabin">Cabin</option>
-                <option class="variant__option" value="yacht">Yacht</option>
+                <option class="one-tour-variant__option" value="cabin">
+                  Cabin
+                </option>
+                <option class="one-tour-variant__option" value="yacht">
+                  Yacht
+                </option>
               </select>
               <input
-                class="contacts__submit"
+                class="one-tour-contacts__submit"
                 type="submit"
                 value="Send a Request"
               />
@@ -527,5 +530,6 @@
         data-hx-get="footer.partial.html"
       ></nav>
     </footer>
+    <script src="js/one-tour.js"></script>
   </body>
 </html>
