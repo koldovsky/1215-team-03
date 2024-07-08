@@ -1,0 +1,25 @@
+{
+    "accommodations": [
+      {
+        "name": "Cabin",
+        "image": "img/our-services/our-services_cabin.jpeg",
+        "description": "All cabins are fully-equipped with everything necessary for relaxing after a day full of impressions. The cabins are designed to host 2 people + 1 child, some of the cabins have a seating area. We have twin and double cabins, you can choose the preferred option when booking a trip.",
+        "features": [
+          "Private bathrooms",
+          "Kettle and filled mini-bar",
+          "Twin or double at your choice"
+        ]
+      },
+      {
+        "name": "Yacht",
+        "image": "img/our-services/our-services_yacht.jpeg",
+        "description": "If you travel with your friends, you can rent the whole yacht to join us at any of the proposed trips. Our yachts can host up to 12 people + kids. The prices depend on the type of the yacht you book. Whatever your choice is, you get the modern, fully-equipped yacht with professional crew.",
+        "features": [
+          "Private bathrooms",
+          "No strangers on your yacht",
+          "Fully-equipped kitchen and lounge zone"
+        ]
+      }
+    ]
+  }
+  
