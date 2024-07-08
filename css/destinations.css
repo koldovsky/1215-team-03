@@ -98,14 +98,9 @@
   color: var(--bg-color-primary);
 }
 
-/*.form_main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}*/
 
-.contacts__background {
+
+/*.contacts__background {
   background: linear-gradient(rgba(44, 59, 78, 0.9), rgba(44, 59, 78, 0.9)),
     url(../img/one-tour/bottom.jpg);
   background-size: cover;
@@ -208,7 +203,7 @@
   background-color: var(--text-color-light);
   color: var(--icon-background);
 }
-
+*/
 .destination {
   opacity: 0; 
   transition: opacity 2s ease-in-out; 
