@@ -10,7 +10,7 @@
       type="img/x-icon"
       href="./img/global/favicon.ico"
     />
-    <link rel="stylesheet" href="css/destinations.css"/>
+    <link rel="stylesheet" href="css/destinations.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -209,6 +209,73 @@
           />
         </div>
       </div>
+      <section class="form_main">
+        <div class="contacts__background">
+          <form
+            id="contact-form"
+            class="contacts__form"
+            action="https://formspree.io/f/xrbzgopb"
+            method="post"
+          >
+            <h3 class="contacts__title">Want to Join Us at Any Tour?</h3>
+            <p class="contacts__text">
+              Fill out the form and we will contact you soon to clear all the
+              details and book a tour for you.
+            </p>
+            <div class="contacts__input-fields">
+              <input
+                class="contacts__input"
+                type="text"
+                name="name"
+                placeholder="Name*"
+                required
+              />
+              <input
+                class="contacts__input"
+                type="tel"
+                name="phone"
+                placeholder="Phone number*"
+                required
+              />
+              <input
+                class="contacts__input"
+                type="email"
+                name="email"
+                placeholder="E-mail*"
+                required
+              />
+              <select class="accomodation">
+                <option value="" disabled selected aria-required="true">
+                  Choose your trip
+                </option>
+                <option class="variant__option" value="croatian-isles">
+                  Affable Croatian Isles
+                </option>
+                <option class="variant__option" value="amalfi">
+                  Vacation Around Amalfi
+                </option>
+                <option class="variant__option" value="fjords-norway">
+                  Through the Fjords of Norway
+                </option>
+                <option class="variant__option" value="turkey">
+                  Non-touristic Turkey
+                </option>
+                <option class="variant__option" value="greece">
+                  Ancient Greece
+                </option>
+                <option class="variant__option" value="ibiza">
+                  Spain + Nightlife at Ibiza
+                </option>
+              </select>
+              <input
+                class="contacts__submit"
+                type="submit"
+                value="Send a Request"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <footer>
       <nav
