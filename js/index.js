@@ -2,6 +2,7 @@ function init() {
   import("./global.header.js");
   import("./index.header-text.js");
   import("./index-contacts.js");
+  import("./clock.js");
 }
 
 const totalPartials = document.querySelectorAll(

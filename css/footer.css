@@ -1,133 +1,118 @@
-.footer{        
-    background-color: var(--bg-color-medium-dark);
-    padding: 40px 0 5px;
+.footer {
+  background-color: var(--bg-color-medium-dark);
+  padding: 40px 0 5px;
 }
-.footer__wraper{
-    max-width: 1440px;
-    padding: 0 15px;
-    width: 100%;
-    margin: 0 auto;
+.footer__wraper {
+  max-width: 1440px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
 }
-.footer__head *{
-    color: var(--text-color-light);    
+.footer__head * {
+  color: var(--text-color-light);
 }
-
-.footer__head{
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
+.footer__head {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
 }
-.footer__item{
-    width: calc(20% - 10px);
-    
+.footer__item {
+  width: calc(20% - 10px);
 }
 .footer__description {
-    font-size: 12px;
-    line-height: 28px;
+  font-size: 12px;
+  line-height: 28px;
+}
+.footer__title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.list {
+}
+.list__item {
+  margin-bottom: 20px;
+}
+.list-bolt .list__item {
+  font-weight: bold;
+}
+.list__link:hover {
+  text-decoration: underline;
+}
+.social {
+  display: inline-flex;
+  gap: 15px;
+  padding:0;
+}
+.social__item {
+  padding: 6px;
+  border-radius: 50%;
+  border: 1px solid;
+  border-color: var(--border-color);  
+}
+.social__item svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--bg-color-secondary);
+}
+.social__item:hover {
+  background-color: var(--bg-color-secondary);
+}
+.social__item:hover svg {
+  fill: var(red);
 }
 
-.footer__title{
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 20px;
+.logo__img {
+  max-width: 176px;
+  margin-bottom: 15px;
 }
-
-
-.list{
-
+.form__input {
+  width: 100%;
+  max-width: 155px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--bg-color-medium-light);
+  color: var(--text-color-secondary);
+  padding: 10px;
+  margin: 10px;
 }
-.list__item{
-margin-bottom: 20px;
+.form__button {
+  width: 100%;
+  max-width: 155px;
+  border-radius: 20px;
+  background-color: var(--bg-color-secondary);
+  padding: 10px;
+  margin: 10px;
 }
-
-.list-bolt .list__item{
-    font-weight: bold;
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--text-color-secondary);
+  margin: 25px 0 0px;
+  padding: 25px 0;
 }
-
-.list__link:hover{
-    text-decoration: underline;
+.footer__bottom * {
+  color: var(--text-color-medium-light);
 }
-.social{
-    display: inline-flex;    
-    gap: 15px;
-}
-.social__item{
-    padding: 6px;
-    border-radius: 50%;
-    border: 1px solid;
-    border-color: var(--border-color);
-
-}
-.social__item:hover{
-    background-color: var(--bg-color-secondary);
-}
-.social__item:hover .social__img{
-    background-color: var(--bg-color-secondary);
-}
-
-.social__img{
-    width: 35px;
-    height: 35px;
-}
-
-.logo__img{
-    max-width: 176px;
-    margin-bottom: 15px;
-}
-.form__input{
-    width: 100%;
-    max-width: 155px;
-    border-radius: 20px;
-    border: none;
-    background-color: var(--bg-color-medium-light);
-    color: var(--text-color-secondary);
-    padding: 10px;
-    margin: 10px;
-}
-.form__button{
-    width: 100%;
-    max-width: 155px;
-    border-radius: 20px;
-    background-color: var(--bg-color-secondary);
-    padding: 10px;
-    margin: 10px;
-    
-}
-
-.footer__bottom{
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid var(--text-color-secondary);
-    margin: 25px 0 0px;
-    padding: 25px 0;
-    
-}
-.footer__bottom *{
-    color: var(--text-color-medium-light);
-}
-
 @media (max-width: 1024px) {
-    .footer__head {
-        flex-wrap: wrap;      
-    }
-    .footer__item{
-        width: 100%;
-        max-width: 255px;        
-    }
+  .footer__head {
+    flex-wrap: wrap;
+  }
+  .footer__item {
+    width: 100%;
+    max-width: 255px;
+  }
 }
-
 @media (max-width: 767px) {
-    .footer__head {
-        flex-direction: column;        
-        align-items: center;
-        text-align: center;        
-    }
-    .logo {
-        text-align: center;
-    }
-    .logo__link {
-        display: inline-block;
-    }
-
+  .footer__head {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .logo {
+    text-align: center;
+  }
+  .logo__link {
+    display: inline-block;
+  }
 }
-
