@@ -1,5 +1,6 @@
 function init() {
-    import('./global.header.js')
+    import('./global.header.js');
+    import('./one-tour-page.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
