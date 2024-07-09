@@ -35,3 +35,9 @@
     font-size: 3rem;
   }
 }
+.custom-glyph {
+  max-width: 50px !important;
+  height: auto;
+  cursor: pointer;
+  pointer-events: all !important;
+}
