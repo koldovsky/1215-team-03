@@ -6,7 +6,7 @@ async function handleSubmit(event) {
     const toastBody = document.querySelector('.toast-body-form');
     const toastTitle = document.querySelector('.toast-title-form');
     const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveInfo, {
-        delay: 10000
+        delay: 5000
     });
 
     try {
